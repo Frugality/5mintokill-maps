@@ -1,0 +1,11 @@
+{
+  "name": "maps",
+  "version": "0.0.18",
+  "description": "Maps for 5 Minutes To Kill (https://5mintokill.io)",
+  "scripts": {
+    "deploy": "gsutil -m cp -z html,js,css,json,map -r ./build/* gs://cdn.5mintokill.io/map-releases/v$npm_package_version/map/",
+    "postdeploy": "echo map-releases = //cdn.5mintokill.io/map-releases/v$npm_package_version/map/"
+  },
+  "author": "Courtland Idstrom",
+  "license": "ISC"
+}
