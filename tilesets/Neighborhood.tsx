@@ -1416,15 +1416,23 @@
  </tile>
  <tile id="232">
   <properties>
+   <property name="collision" type="bool" value="true"/>
    <property name="material" value="wood"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_233.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="32" height="64"/>
+  </objectgroup>
  </tile>
  <tile id="233">
   <properties>
+   <property name="collision" type="bool" value="true"/>
    <property name="material" value="wood"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_234.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="64" height="32"/>
+  </objectgroup>
  </tile>
  <tile id="234">
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_235.png"/>
@@ -1573,15 +1581,23 @@
  </tile>
  <tile id="259">
   <properties>
+   <property name="collision" type="bool" value="true"/>
    <property name="material" value="wood"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_260.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="32" width="64" height="32"/>
+  </objectgroup>
  </tile>
  <tile id="260">
   <properties>
+   <property name="collision" type="bool" value="true"/>
    <property name="material" value="wood"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_261.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="32" y="0" width="32" height="64"/>
+  </objectgroup>
  </tile>
  <tile id="261">
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_262.png"/>
