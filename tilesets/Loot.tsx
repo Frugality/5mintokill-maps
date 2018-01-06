@@ -4,31 +4,31 @@
  <properties>
   <property name="visible" type="bool" value="false"/>
  </properties>
- <tile id="0">
+ <tile id="0" type="loot">
   <properties>
    <property name="loot" value="ammo"/>
   </properties>
   <image width="25" height="31" source="../sprites/props/ammo.png"/>
  </tile>
- <tile id="1">
+ <tile id="1" type="loot">
   <properties>
    <property name="loot" value="health"/>
   </properties>
   <image width="48" height="40" source="../sprites/props/health.png"/>
  </tile>
- <tile id="2">
+ <tile id="2" type="loot">
   <properties>
    <property name="loot" value="gun"/>
   </properties>
   <image width="19" height="12" source="../sprites/props/weapon_gun.png"/>
  </tile>
- <tile id="3">
+ <tile id="3" type="loot">
   <properties>
    <property name="loot" value="equipment"/>
   </properties>
   <image width="21" height="22" source="../sprites/props/helmet_blue.png"/>
  </tile>
- <tile id="4">
+ <tile id="4" type="loot">
   <properties>
    <property name="loot" value="door"/>
    <property name="pivot_x" type="int" value="7"/>
