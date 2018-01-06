@@ -1,7 +1,3491 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" nextobjectid="473">
- <tileset firstgid="1" source="../tilesets/Neighborhood.tsx"/>
- <tileset firstgid="539" source="../tilesets/Loot.tsx"/>
+<map version="1.0" tiledversion="1.1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" infinite="0" nextobjectid="473">
+ <tileset firstgid="1" name="Tiles" tilewidth="64" tileheight="64" tilecount="538" columns="27">
+  <properties>
+   <property name="collision" type="bool" value="true"/>
+  </properties>
+  <terraintypes>
+   <terrain name="Grass" tile="0"/>
+   <terrain name="patio" tile="-1"/>
+   <terrain name="road" tile="-1"/>
+   <terrain name="yellow-line" tile="-1"/>
+   <terrain name="white-line" tile="-1"/>
+  </terraintypes>
+  <tile id="0" terrain="0,0,0,0">
+   <properties>
+    <property name="material" value="grass"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_01.png"/>
+  </tile>
+  <tile id="1" terrain="0,0,0,0">
+   <properties>
+    <property name="material" value="grass"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_02.png"/>
+  </tile>
+  <tile id="2" terrain="0,0,0,0">
+   <properties>
+    <property name="material" value="grass"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_03.png"/>
+  </tile>
+  <tile id="3" terrain="0,0,0,0">
+   <properties>
+    <property name="material" value="grass"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_04.png"/>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="material" value="dirt"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_05.png"/>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="material" value="dirt"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_06.png"/>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_07.png"/>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_08.png"/>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_09.png"/>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_10.png"/>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_11.png"/>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_12.png"/>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_13.png"/>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_14.png"/>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_15.png"/>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_16.png"/>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_17.png"/>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_18.png"/>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_19.png"/>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_20.png"/>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_21.png"/>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_22.png"/>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_23.png"/>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_24.png"/>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_25.png"/>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_26.png"/>
+  </tile>
+  <tile id="26">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_27.png"/>
+  </tile>
+  <tile id="27" terrain="3,2,3,2">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_28.png"/>
+  </tile>
+  <tile id="28" terrain="2,3,2,3">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_29.png"/>
+  </tile>
+  <tile id="29" terrain="3,3,2,2">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_30.png"/>
+  </tile>
+  <tile id="30" terrain="2,2,2,3">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_31.png"/>
+  </tile>
+  <tile id="31" terrain="2,2,3,2">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_32.png"/>
+  </tile>
+  <tile id="32" terrain="3,3,3,2">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_33.png"/>
+  </tile>
+  <tile id="33" terrain="3,3,2,3">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_34.png"/>
+  </tile>
+  <tile id="34" terrain="4,2,4,2">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_35.png"/>
+  </tile>
+  <tile id="35" terrain="2,4,2,4">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_36.png"/>
+  </tile>
+  <tile id="36" terrain="4,4,2,2">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_37.png"/>
+  </tile>
+  <tile id="37" terrain="2,2,2,4">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_38.png"/>
+  </tile>
+  <tile id="38" terrain="2,2,4,2">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_39.png"/>
+  </tile>
+  <tile id="39" terrain="4,4,4,2">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_40.png"/>
+  </tile>
+  <tile id="40" terrain="4,4,2,4">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_41.png"/>
+  </tile>
+  <tile id="41">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_42.png"/>
+  </tile>
+  <tile id="42">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_43.png"/>
+  </tile>
+  <tile id="43">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_44.png"/>
+  </tile>
+  <tile id="44">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_45.png"/>
+  </tile>
+  <tile id="45">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_46.png"/>
+  </tile>
+  <tile id="46">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_47.png"/>
+  </tile>
+  <tile id="47">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_48.png"/>
+  </tile>
+  <tile id="48">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_49.png"/>
+  </tile>
+  <tile id="49">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_50.png"/>
+  </tile>
+  <tile id="50">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_51.png"/>
+  </tile>
+  <tile id="51">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_52.png"/>
+  </tile>
+  <tile id="52">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_53.png"/>
+  </tile>
+  <tile id="53">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_54.png"/>
+  </tile>
+  <tile id="54">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_55.png"/>
+  </tile>
+  <tile id="55" terrain=",3,,3">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_56.png"/>
+  </tile>
+  <tile id="56" terrain="2,2,3,3">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_57.png"/>
+  </tile>
+  <tile id="57" terrain="2,3,2,2">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_58.png"/>
+  </tile>
+  <tile id="58" terrain="3,2,2,2">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_59.png"/>
+  </tile>
+  <tile id="59" terrain="3,2,3,3">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_60.png"/>
+  </tile>
+  <tile id="60" terrain="2,3,3,3">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_61.png"/>
+  </tile>
+  <tile id="61" terrain="4,4,4,4">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_62.png"/>
+  </tile>
+  <tile id="62" terrain="4,4,4,4">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_63.png"/>
+  </tile>
+  <tile id="63" terrain="2,2,4,4">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_64.png"/>
+  </tile>
+  <tile id="64" terrain="2,4,2,2">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_65.png"/>
+  </tile>
+  <tile id="65" terrain="4,2,2,2">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_66.png"/>
+  </tile>
+  <tile id="66" terrain="4,2,4,4">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_67.png"/>
+  </tile>
+  <tile id="67" terrain="2,4,4,4">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_68.png"/>
+  </tile>
+  <tile id="68">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_69.png"/>
+  </tile>
+  <tile id="69">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_70.png"/>
+  </tile>
+  <tile id="70">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_71.png"/>
+  </tile>
+  <tile id="71">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_72.png"/>
+  </tile>
+  <tile id="72">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_73.png"/>
+  </tile>
+  <tile id="73">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_74.png"/>
+  </tile>
+  <tile id="74">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_75.png"/>
+  </tile>
+  <tile id="75">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_76.png"/>
+  </tile>
+  <tile id="76">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_77.png"/>
+  </tile>
+  <tile id="77">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_78.png"/>
+  </tile>
+  <tile id="78">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_79.png"/>
+  </tile>
+  <tile id="79">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_80.png"/>
+  </tile>
+  <tile id="80">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_81.png"/>
+  </tile>
+  <tile id="81">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_82.png"/>
+  </tile>
+  <tile id="82">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_83.png"/>
+  </tile>
+  <tile id="83">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_84.png"/>
+  </tile>
+  <tile id="84">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_85.png"/>
+  </tile>
+  <tile id="85" terrain="2,2,2,2">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_86.png"/>
+  </tile>
+  <tile id="86">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_87.png"/>
+  </tile>
+  <tile id="87">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_88.png"/>
+  </tile>
+  <tile id="88">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_89.png"/>
+  </tile>
+  <tile id="89">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_90.png"/>
+  </tile>
+  <tile id="90">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_91.png"/>
+  </tile>
+  <tile id="91">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_92.png"/>
+  </tile>
+  <tile id="92" terrain="2,2,2,2">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_93.png"/>
+  </tile>
+  <tile id="93">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_94.png"/>
+  </tile>
+  <tile id="94">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_95.png"/>
+  </tile>
+  <tile id="95">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_96.png"/>
+  </tile>
+  <tile id="96">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_97.png"/>
+  </tile>
+  <tile id="97">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_98.png"/>
+  </tile>
+  <tile id="98">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_99.png"/>
+  </tile>
+  <tile id="99">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_100.png"/>
+  </tile>
+  <tile id="100">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_101.png"/>
+  </tile>
+  <tile id="101">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_102.png"/>
+  </tile>
+  <tile id="102">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_103.png"/>
+  </tile>
+  <tile id="103">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_104.png"/>
+  </tile>
+  <tile id="104">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_105.png"/>
+  </tile>
+  <tile id="105">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_106.png"/>
+  </tile>
+  <tile id="106">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_107.png"/>
+  </tile>
+  <tile id="107">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_108.png"/>
+  </tile>
+  <tile id="108">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_109.png"/>
+  </tile>
+  <tile id="109">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_110.png"/>
+  </tile>
+  <tile id="110">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_111.png"/>
+  </tile>
+  <tile id="111">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_112.png"/>
+  </tile>
+  <tile id="112">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_113.png"/>
+  </tile>
+  <tile id="113">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_114.png"/>
+  </tile>
+  <tile id="114">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_115.png"/>
+   <objectgroup draworder="index" opacity="0.5"/>
+  </tile>
+  <tile id="115">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_116.png"/>
+  </tile>
+  <tile id="116">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_117.png"/>
+  </tile>
+  <tile id="117">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_118.png"/>
+  </tile>
+  <tile id="118">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_119.png"/>
+  </tile>
+  <tile id="119">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_120.png"/>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_121.png"/>
+  </tile>
+  <tile id="121">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_122.png"/>
+  </tile>
+  <tile id="122">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_123.png"/>
+  </tile>
+  <tile id="123">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_124.png"/>
+  </tile>
+  <tile id="124">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_125.png"/>
+  </tile>
+  <tile id="125">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_126.png"/>
+  </tile>
+  <tile id="126">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_127.png"/>
+  </tile>
+  <tile id="127">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_128.png"/>
+  </tile>
+  <tile id="128">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_129.png"/>
+  </tile>
+  <tile id="129">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_130.png"/>
+  </tile>
+  <tile id="130">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_131.png"/>
+  </tile>
+  <tile id="131">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_132.png"/>
+  </tile>
+  <tile id="132">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_133.png"/>
+  </tile>
+  <tile id="133">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_134.png"/>
+  </tile>
+  <tile id="134">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_135.png"/>
+  </tile>
+  <tile id="135">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_136.png"/>
+  </tile>
+  <tile id="136">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_137.png"/>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_138.png"/>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_139.png"/>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_140.png"/>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_141.png"/>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_142.png"/>
+  </tile>
+  <tile id="142">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_143.png"/>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_144.png"/>
+  </tile>
+  <tile id="144">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_145.png"/>
+  </tile>
+  <tile id="145">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_146.png"/>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_147.png"/>
+  </tile>
+  <tile id="147">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_148.png"/>
+  </tile>
+  <tile id="148">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_149.png"/>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_150.png"/>
+  </tile>
+  <tile id="150">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_151.png"/>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_152.png"/>
+  </tile>
+  <tile id="152">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_153.png"/>
+  </tile>
+  <tile id="153">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_154.png"/>
+  </tile>
+  <tile id="154">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_155.png"/>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_156.png"/>
+  </tile>
+  <tile id="156">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_157.png"/>
+  </tile>
+  <tile id="157">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_158.png"/>
+  </tile>
+  <tile id="158">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_159.png"/>
+  </tile>
+  <tile id="159">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_160.png"/>
+  </tile>
+  <tile id="160">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_161.png"/>
+  </tile>
+  <tile id="161">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_162.png"/>
+  </tile>
+  <tile id="162">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_163.png"/>
+  </tile>
+  <tile id="163">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_164.png"/>
+  </tile>
+  <tile id="164">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_165.png"/>
+  </tile>
+  <tile id="165">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_166.png"/>
+  </tile>
+  <tile id="166">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_167.png"/>
+  </tile>
+  <tile id="167">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_168.png"/>
+  </tile>
+  <tile id="168">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_169.png"/>
+  </tile>
+  <tile id="169">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_170.png"/>
+  </tile>
+  <tile id="170">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_171.png"/>
+  </tile>
+  <tile id="171">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_172.png"/>
+  </tile>
+  <tile id="172">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_173.png"/>
+  </tile>
+  <tile id="173">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_174.png"/>
+  </tile>
+  <tile id="174">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_175.png"/>
+  </tile>
+  <tile id="175">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_176.png"/>
+  </tile>
+  <tile id="176">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_177.png"/>
+  </tile>
+  <tile id="177">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_178.png"/>
+  </tile>
+  <tile id="178">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_179.png"/>
+  </tile>
+  <tile id="179">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_180.png"/>
+  </tile>
+  <tile id="180">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_181.png"/>
+  </tile>
+  <tile id="181">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_182.png"/>
+  </tile>
+  <tile id="182">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_183.png"/>
+  </tile>
+  <tile id="183">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_184.png"/>
+  </tile>
+  <tile id="184">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_185.png"/>
+  </tile>
+  <tile id="185">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_186.png"/>
+  </tile>
+  <tile id="186">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_187.png"/>
+  </tile>
+  <tile id="187">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_188.png"/>
+  </tile>
+  <tile id="188">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_189.png"/>
+  </tile>
+  <tile id="189">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_190.png"/>
+  </tile>
+  <tile id="190">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_191.png"/>
+  </tile>
+  <tile id="191">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_192.png"/>
+  </tile>
+  <tile id="192">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_193.png"/>
+  </tile>
+  <tile id="193">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_194.png"/>
+  </tile>
+  <tile id="194">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_195.png"/>
+  </tile>
+  <tile id="195">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_196.png"/>
+  </tile>
+  <tile id="196">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_197.png"/>
+  </tile>
+  <tile id="197">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_198.png"/>
+  </tile>
+  <tile id="198">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_199.png"/>
+  </tile>
+  <tile id="199">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_200.png"/>
+  </tile>
+  <tile id="200">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_201.png"/>
+  </tile>
+  <tile id="201">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_202.png"/>
+  </tile>
+  <tile id="202">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_203.png"/>
+  </tile>
+  <tile id="203">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_204.png"/>
+  </tile>
+  <tile id="204">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_205.png"/>
+  </tile>
+  <tile id="205">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_206.png"/>
+  </tile>
+  <tile id="206">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_207.png"/>
+  </tile>
+  <tile id="207">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_208.png"/>
+  </tile>
+  <tile id="208">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_209.png"/>
+  </tile>
+  <tile id="209">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_210.png"/>
+  </tile>
+  <tile id="210">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_211.png"/>
+  </tile>
+  <tile id="211">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_212.png"/>
+  </tile>
+  <tile id="212">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_213.png"/>
+  </tile>
+  <tile id="213">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_214.png"/>
+  </tile>
+  <tile id="214">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_215.png"/>
+  </tile>
+  <tile id="215">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_216.png"/>
+  </tile>
+  <tile id="216">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_217.png"/>
+  </tile>
+  <tile id="217">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_218.png"/>
+  </tile>
+  <tile id="218">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_219.png"/>
+  </tile>
+  <tile id="219">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_220.png"/>
+  </tile>
+  <tile id="220">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_221.png"/>
+  </tile>
+  <tile id="221">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_222.png"/>
+  </tile>
+  <tile id="222">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_223.png"/>
+  </tile>
+  <tile id="223">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_224.png"/>
+   <objectgroup draworder="index">
+    <object id="2" x="0" y="0" width="32" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="224">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_225.png"/>
+   <objectgroup draworder="index">
+    <object id="2" x="0" y="0" width="64" height="32"/>
+   </objectgroup>
+  </tile>
+  <tile id="225">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_226.png"/>
+  </tile>
+  <tile id="226">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_227.png"/>
+  </tile>
+  <tile id="227">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_228.png"/>
+  </tile>
+  <tile id="228">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_229.png"/>
+  </tile>
+  <tile id="229">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_230.png"/>
+  </tile>
+  <tile id="230">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_231.png"/>
+  </tile>
+  <tile id="231">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_232.png"/>
+  </tile>
+  <tile id="232">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_233.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="32" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="233">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_234.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="64" height="32"/>
+   </objectgroup>
+  </tile>
+  <tile id="234">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_235.png"/>
+  </tile>
+  <tile id="235">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_236.png"/>
+  </tile>
+  <tile id="236">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_237.png"/>
+  </tile>
+  <tile id="237">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_238.png"/>
+  </tile>
+  <tile id="238">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_239.png"/>
+  </tile>
+  <tile id="239">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_240.png"/>
+  </tile>
+  <tile id="240">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_241.png"/>
+  </tile>
+  <tile id="241">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_242.png"/>
+  </tile>
+  <tile id="242">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_243.png"/>
+  </tile>
+  <tile id="243">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_244.png"/>
+  </tile>
+  <tile id="244">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_245.png"/>
+  </tile>
+  <tile id="245">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_246.png"/>
+  </tile>
+  <tile id="246">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_247.png"/>
+  </tile>
+  <tile id="247">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_248.png"/>
+  </tile>
+  <tile id="248">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_249.png"/>
+  </tile>
+  <tile id="249">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_250.png"/>
+  </tile>
+  <tile id="250">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_251.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="32" width="64" height="32"/>
+   </objectgroup>
+  </tile>
+  <tile id="251">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_252.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="32" y="0" width="32" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="252">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_253.png"/>
+  </tile>
+  <tile id="253">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_254.png"/>
+  </tile>
+  <tile id="254">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_255.png"/>
+  </tile>
+  <tile id="255">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_256.png"/>
+  </tile>
+  <tile id="256">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_257.png"/>
+  </tile>
+  <tile id="257">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_258.png"/>
+  </tile>
+  <tile id="258">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_259.png"/>
+  </tile>
+  <tile id="259">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_260.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="32" width="64" height="32"/>
+   </objectgroup>
+  </tile>
+  <tile id="260">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_261.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="32" y="0" width="32" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="261">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_262.png"/>
+  </tile>
+  <tile id="262">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_263.png"/>
+  </tile>
+  <tile id="263">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_264.png"/>
+  </tile>
+  <tile id="264">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_265.png"/>
+  </tile>
+  <tile id="265">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_266.png"/>
+  </tile>
+  <tile id="266">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_267.png"/>
+  </tile>
+  <tile id="267">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_268.png"/>
+  </tile>
+  <tile id="268">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_269.png"/>
+  </tile>
+  <tile id="269">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_270.png"/>
+  </tile>
+  <tile id="270" terrain=",,,1">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_271.png"/>
+  </tile>
+  <tile id="271" terrain=",,1,">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_272.png"/>
+  </tile>
+  <tile id="272">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_273.png"/>
+  </tile>
+  <tile id="273">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_274.png"/>
+  </tile>
+  <tile id="274">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_275.png"/>
+  </tile>
+  <tile id="275">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_276.png"/>
+  </tile>
+  <tile id="276">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_277.png"/>
+  </tile>
+  <tile id="277">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_278.png"/>
+  </tile>
+  <tile id="278">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_279.png"/>
+  </tile>
+  <tile id="279">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_280.png"/>
+  </tile>
+  <tile id="280">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_281.png"/>
+  </tile>
+  <tile id="281">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_282.png"/>
+  </tile>
+  <tile id="282">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_283.png"/>
+  </tile>
+  <tile id="283">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_284.png"/>
+  </tile>
+  <tile id="284">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_285.png"/>
+  </tile>
+  <tile id="285">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_286.png"/>
+  </tile>
+  <tile id="286">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_287.png"/>
+  </tile>
+  <tile id="287">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_288.png"/>
+  </tile>
+  <tile id="288">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_289.png"/>
+  </tile>
+  <tile id="289">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_290.png"/>
+  </tile>
+  <tile id="290">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_291.png"/>
+  </tile>
+  <tile id="291">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_292.png"/>
+  </tile>
+  <tile id="292">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_293.png"/>
+  </tile>
+  <tile id="293">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_294.png"/>
+  </tile>
+  <tile id="294">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_295.png"/>
+  </tile>
+  <tile id="295">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_296.png"/>
+  </tile>
+  <tile id="296">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_297.png"/>
+  </tile>
+  <tile id="297" terrain=",1,,">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_298.png"/>
+  </tile>
+  <tile id="298" terrain="1,,,">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_299.png"/>
+  </tile>
+  <tile id="299">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_300.png"/>
+  </tile>
+  <tile id="300">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_301.png"/>
+  </tile>
+  <tile id="301">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_302.png"/>
+  </tile>
+  <tile id="302">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_303.png"/>
+  </tile>
+  <tile id="303">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_304.png"/>
+  </tile>
+  <tile id="304">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_305.png"/>
+  </tile>
+  <tile id="305">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_306.png"/>
+  </tile>
+  <tile id="306">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_307.png"/>
+  </tile>
+  <tile id="307">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_308.png"/>
+  </tile>
+  <tile id="308">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_309.png"/>
+  </tile>
+  <tile id="309">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_310.png"/>
+  </tile>
+  <tile id="310">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_311.png"/>
+  </tile>
+  <tile id="311">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_312.png"/>
+  </tile>
+  <tile id="312">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_313.png"/>
+  </tile>
+  <tile id="313">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_314.png"/>
+  </tile>
+  <tile id="314">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_315.png"/>
+  </tile>
+  <tile id="315">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_316.png"/>
+  </tile>
+  <tile id="316">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_317.png"/>
+  </tile>
+  <tile id="317">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_318.png"/>
+  </tile>
+  <tile id="318">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_319.png"/>
+  </tile>
+  <tile id="319">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_320.png"/>
+  </tile>
+  <tile id="320">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_321.png"/>
+  </tile>
+  <tile id="321">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_322.png"/>
+  </tile>
+  <tile id="322">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_323.png"/>
+  </tile>
+  <tile id="323">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_324.png"/>
+  </tile>
+  <tile id="324" terrain="1,1,1,">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_325.png"/>
+  </tile>
+  <tile id="325" terrain="1,1,,1">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_326.png"/>
+  </tile>
+  <tile id="326">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_327.png"/>
+  </tile>
+  <tile id="327">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_328.png"/>
+  </tile>
+  <tile id="328">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_329.png"/>
+  </tile>
+  <tile id="329">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_330.png"/>
+  </tile>
+  <tile id="330">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_331.png"/>
+  </tile>
+  <tile id="331">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_332.png"/>
+  </tile>
+  <tile id="332">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_333.png"/>
+  </tile>
+  <tile id="333">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_334.png"/>
+  </tile>
+  <tile id="334">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_335.png"/>
+  </tile>
+  <tile id="335">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_336.png"/>
+  </tile>
+  <tile id="336">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_337.png"/>
+  </tile>
+  <tile id="337">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_338.png"/>
+  </tile>
+  <tile id="338">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_339.png"/>
+  </tile>
+  <tile id="339">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_340.png"/>
+  </tile>
+  <tile id="340">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_341.png"/>
+  </tile>
+  <tile id="341">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_342.png"/>
+  </tile>
+  <tile id="342">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_343.png"/>
+  </tile>
+  <tile id="343">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_344.png"/>
+  </tile>
+  <tile id="344">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_345.png"/>
+  </tile>
+  <tile id="345">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_346.png"/>
+  </tile>
+  <tile id="346">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_347.png"/>
+  </tile>
+  <tile id="347">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_348.png"/>
+  </tile>
+  <tile id="348">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_349.png"/>
+  </tile>
+  <tile id="349">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_350.png"/>
+  </tile>
+  <tile id="350">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_351.png"/>
+  </tile>
+  <tile id="351" terrain="1,,1,1">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_352.png"/>
+  </tile>
+  <tile id="352" terrain=",1,1,1">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_353.png"/>
+  </tile>
+  <tile id="353">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_354.png"/>
+  </tile>
+  <tile id="354">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_355.png"/>
+  </tile>
+  <tile id="355">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_356.png"/>
+  </tile>
+  <tile id="356">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_357.png"/>
+  </tile>
+  <tile id="357">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_358.png"/>
+  </tile>
+  <tile id="358">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_359.png"/>
+  </tile>
+  <tile id="359">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_360.png"/>
+  </tile>
+  <tile id="360">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_361.png"/>
+  </tile>
+  <tile id="361">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_362.png"/>
+  </tile>
+  <tile id="362">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_363.png"/>
+  </tile>
+  <tile id="363">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_364.png"/>
+  </tile>
+  <tile id="364">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_365.png"/>
+  </tile>
+  <tile id="365">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_366.png"/>
+  </tile>
+  <tile id="366">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_367.png"/>
+  </tile>
+  <tile id="367">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_368.png"/>
+  </tile>
+  <tile id="368">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_369.png"/>
+  </tile>
+  <tile id="369">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_370.png"/>
+  </tile>
+  <tile id="370">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_371.png"/>
+  </tile>
+  <tile id="371">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_372.png"/>
+  </tile>
+  <tile id="372">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_373.png"/>
+  </tile>
+  <tile id="373">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_374.png"/>
+  </tile>
+  <tile id="374">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_375.png"/>
+  </tile>
+  <tile id="375">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_376.png"/>
+  </tile>
+  <tile id="376">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_377.png"/>
+  </tile>
+  <tile id="377">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_378.png"/>
+  </tile>
+  <tile id="378">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_379.png"/>
+  </tile>
+  <tile id="379">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_380.png"/>
+  </tile>
+  <tile id="380" terrain=",,,1">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_381.png"/>
+  </tile>
+  <tile id="381">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_382.png"/>
+  </tile>
+  <tile id="382">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_383.png"/>
+  </tile>
+  <tile id="383">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_384.png"/>
+  </tile>
+  <tile id="384">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_385.png"/>
+  </tile>
+  <tile id="385">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_386.png"/>
+  </tile>
+  <tile id="386">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_387.png"/>
+  </tile>
+  <tile id="387">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_388.png"/>
+  </tile>
+  <tile id="388">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_389.png"/>
+  </tile>
+  <tile id="389">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_390.png"/>
+  </tile>
+  <tile id="390">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_391.png"/>
+  </tile>
+  <tile id="391">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_392.png"/>
+  </tile>
+  <tile id="392">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_393.png"/>
+  </tile>
+  <tile id="393">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_394.png"/>
+  </tile>
+  <tile id="394">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_395.png"/>
+  </tile>
+  <tile id="395">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_396.png"/>
+  </tile>
+  <tile id="396">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_397.png"/>
+  </tile>
+  <tile id="397">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_398.png"/>
+  </tile>
+  <tile id="398">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_399.png"/>
+  </tile>
+  <tile id="399">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_400.png"/>
+  </tile>
+  <tile id="400">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_401.png"/>
+  </tile>
+  <tile id="401">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_402.png"/>
+  </tile>
+  <tile id="402">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_403.png"/>
+  </tile>
+  <tile id="403">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_404.png"/>
+  </tile>
+  <tile id="404">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_405.png"/>
+  </tile>
+  <tile id="405">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_406.png"/>
+  </tile>
+  <tile id="406">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_407.png"/>
+  </tile>
+  <tile id="407">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_408.png"/>
+  </tile>
+  <tile id="408">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_409.png"/>
+  </tile>
+  <tile id="409">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_410.png"/>
+  </tile>
+  <tile id="410">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_411.png"/>
+  </tile>
+  <tile id="411">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_412.png"/>
+  </tile>
+  <tile id="412">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_413.png"/>
+  </tile>
+  <tile id="413">
+   <properties>
+    <property name="material" value="concrete"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_414.png"/>
+  </tile>
+  <tile id="414">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_415.png"/>
+  </tile>
+  <tile id="415">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_416.png"/>
+  </tile>
+  <tile id="416">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_417.png"/>
+  </tile>
+  <tile id="417">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_418.png"/>
+  </tile>
+  <tile id="418">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_419.png"/>
+  </tile>
+  <tile id="419">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_420.png"/>
+  </tile>
+  <tile id="420">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_421.png"/>
+  </tile>
+  <tile id="421">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_422.png"/>
+  </tile>
+  <tile id="422">
+   <properties>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_423.png"/>
+  </tile>
+  <tile id="423">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_424.png"/>
+  </tile>
+  <tile id="424">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_425.png"/>
+  </tile>
+  <tile id="425">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_426.png"/>
+  </tile>
+  <tile id="426">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_427.png"/>
+  </tile>
+  <tile id="427">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_428.png"/>
+  </tile>
+  <tile id="428">
+   <properties>
+    <property name="material" value="carpet"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_429.png"/>
+  </tile>
+  <tile id="429">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_430.png"/>
+  </tile>
+  <tile id="430">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_431.png"/>
+  </tile>
+  <tile id="431">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_432.png"/>
+  </tile>
+  <tile id="432">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_433.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="21" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="433">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_434.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="43" y="0" width="21" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="434">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_435.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="22" y="0" width="20" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="435">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_436.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="22" width="64" height="20"/>
+   </objectgroup>
+  </tile>
+  <tile id="436">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_437.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="21" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="437">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_438.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="43" y="0" width="21" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="438">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_439.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="28" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="439">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_440.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="36" y="0" width="28" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="440">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_441.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="18" y="0" width="28" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="441">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_442.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="18" y="0" width="28" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="442">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_443.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="18" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="443">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_444.png"/>
+   <objectgroup draworder="index">
+    <object id="2" x="46" y="0" width="18" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="444">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_445.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="23" y="0" width="18" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="445">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_446.png"/>
+   <objectgroup draworder="index">
+    <object id="3" x="23" y="0" width="18" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="446">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_447.png"/>
+  </tile>
+  <tile id="447">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_448.png"/>
+  </tile>
+  <tile id="448">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_449.png"/>
+  </tile>
+  <tile id="449">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_450.png"/>
+  </tile>
+  <tile id="450">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_451.png"/>
+  </tile>
+  <tile id="451">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_452.png"/>
+  </tile>
+  <tile id="452">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_453.png"/>
+  </tile>
+  <tile id="453">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_454.png"/>
+  </tile>
+  <tile id="454">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_455.png"/>
+  </tile>
+  <tile id="455">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_456.png"/>
+  </tile>
+  <tile id="456">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_457.png"/>
+  </tile>
+  <tile id="457">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_458.png"/>
+  </tile>
+  <tile id="458">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_459.png"/>
+  </tile>
+  <tile id="459">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_460.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="64" height="21"/>
+   </objectgroup>
+  </tile>
+  <tile id="460">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_461.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="43" width="64" height="21"/>
+   </objectgroup>
+  </tile>
+  <tile id="461">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_462.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="24" y="0" width="16" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="462">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_463.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="24" width="64" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="463">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_464.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="64" height="21"/>
+   </objectgroup>
+  </tile>
+  <tile id="464">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_465.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="43" width="64" height="21"/>
+   </objectgroup>
+  </tile>
+  <tile id="465">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_466.png"/>
+   <objectgroup draworder="index">
+    <object id="1" type="collision" x="0" y="0" width="64" height="28"/>
+   </objectgroup>
+  </tile>
+  <tile id="466">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_467.png"/>
+   <objectgroup draworder="index">
+    <object id="1" type="collision" x="0" y="36" width="64" height="28"/>
+   </objectgroup>
+  </tile>
+  <tile id="467">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_468.png"/>
+   <objectgroup draworder="index">
+    <object id="1" type="collision" x="0" y="18" width="64" height="28"/>
+   </objectgroup>
+  </tile>
+  <tile id="468">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_469.png"/>
+   <objectgroup draworder="index">
+    <object id="1" type="collision" x="0" y="18" width="64" height="28"/>
+   </objectgroup>
+  </tile>
+  <tile id="469">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_470.png"/>
+   <objectgroup draworder="index">
+    <object id="3" type="collision" x="0" y="0" width="64" height="18"/>
+   </objectgroup>
+  </tile>
+  <tile id="470">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_471.png"/>
+   <objectgroup draworder="index">
+    <object id="1" type="collision" x="0" y="46" width="64" height="18"/>
+   </objectgroup>
+  </tile>
+  <tile id="471">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_472.png"/>
+   <objectgroup draworder="index">
+    <object id="1" type="collision" x="0" y="23" width="64" height="18"/>
+   </objectgroup>
+  </tile>
+  <tile id="472">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="false"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_473.png"/>
+   <objectgroup draworder="index">
+    <object id="1" type="collision" x="0" y="23" width="64" height="18"/>
+   </objectgroup>
+  </tile>
+  <tile id="473">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_474.png"/>
+  </tile>
+  <tile id="474">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_475.png"/>
+  </tile>
+  <tile id="475">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_476.png"/>
+  </tile>
+  <tile id="476">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_477.png"/>
+  </tile>
+  <tile id="477">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_478.png"/>
+  </tile>
+  <tile id="478">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_479.png"/>
+  </tile>
+  <tile id="479">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_480.png"/>
+  </tile>
+  <tile id="480">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_481.png"/>
+  </tile>
+  <tile id="481">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_482.png"/>
+  </tile>
+  <tile id="482">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_483.png"/>
+  </tile>
+  <tile id="483">
+   <properties>
+    <property name="material" value="wood"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_484.png"/>
+  </tile>
+  <tile id="484">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_485.png"/>
+  </tile>
+  <tile id="485">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_486.png"/>
+  </tile>
+  <tile id="486">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_487.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="16" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="487">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_488.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="48" y="0" width="16" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="488">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_489.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="22" y="0" width="20" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="489">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_490.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="22" width="64" height="20"/>
+   </objectgroup>
+  </tile>
+  <tile id="490">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_491.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="16" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="491">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_492.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="48" y="0" width="16" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="492">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_493.png"/>
+  </tile>
+  <tile id="493">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_494.png"/>
+  </tile>
+  <tile id="494">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_495.png"/>
+  </tile>
+  <tile id="495">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_496.png"/>
+  </tile>
+  <tile id="496">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_497.png"/>
+  </tile>
+  <tile id="497">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_498.png"/>
+  </tile>
+  <tile id="498">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_499.png"/>
+  </tile>
+  <tile id="499">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_500.png"/>
+  </tile>
+  <tile id="500">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_501.png"/>
+  </tile>
+  <tile id="501">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_502.png"/>
+  </tile>
+  <tile id="502">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_503.png"/>
+  </tile>
+  <tile id="503">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_504.png"/>
+  </tile>
+  <tile id="504">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_505.png"/>
+  </tile>
+  <tile id="505">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_506.png"/>
+  </tile>
+  <tile id="506">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_507.png"/>
+  </tile>
+  <tile id="507">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_508.png"/>
+  </tile>
+  <tile id="508">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_509.png"/>
+  </tile>
+  <tile id="509">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_510.png"/>
+  </tile>
+  <tile id="510">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_511.png"/>
+  </tile>
+  <tile id="511">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_512.png"/>
+  </tile>
+  <tile id="512">
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_513.png"/>
+  </tile>
+  <tile id="513">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_514.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="64" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="514">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_515.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="48" width="64" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="515">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_516.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="24" y="0" width="16" height="64"/>
+   </objectgroup>
+  </tile>
+  <tile id="516">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_517.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="24" width="64" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="517">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_518.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="64" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="518">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="glass"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_519.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="48" width="64" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="519">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_520.png"/>
+  </tile>
+  <tile id="520">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_521.png"/>
+  </tile>
+  <tile id="521">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_522.png"/>
+  </tile>
+  <tile id="522">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_523.png"/>
+  </tile>
+  <tile id="523">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_524.png"/>
+  </tile>
+  <tile id="524">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_525.png"/>
+  </tile>
+  <tile id="525">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_526.png"/>
+  </tile>
+  <tile id="526">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="metal"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_527.png"/>
+  </tile>
+  <tile id="527">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_528.png"/>
+  </tile>
+  <tile id="528">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_529.png"/>
+  </tile>
+  <tile id="529">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_530.png"/>
+  </tile>
+  <tile id="530">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_531.png"/>
+  </tile>
+  <tile id="531">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_532.png"/>
+  </tile>
+  <tile id="532">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_533.png"/>
+  </tile>
+  <tile id="533">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_534.png"/>
+  </tile>
+  <tile id="534">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_535.png"/>
+  </tile>
+  <tile id="535">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_536.png"/>
+  </tile>
+  <tile id="536">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_537.png"/>
+  </tile>
+  <tile id="537">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="material" value="wood"/>
+    <property name="transparent" type="bool" value="true"/>
+   </properties>
+   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_538.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="539" name="loot" tilewidth="64" tileheight="128" tilecount="5" columns="0">
+  <grid orientation="orthogonal" width="48" height="40"/>
+  <properties>
+   <property name="visible" type="bool" value="false"/>
+  </properties>
+  <tile id="0">
+   <properties>
+    <property name="loot" value="ammo"/>
+   </properties>
+   <image width="25" height="31" source="../sprites/props/ammo.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="loot" value="health"/>
+   </properties>
+   <image width="48" height="40" source="../sprites/props/health.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="loot" value="gun"/>
+   </properties>
+   <image width="19" height="12" source="../sprites/props/weapon_gun.png"/>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="loot" value="equipment"/>
+   </properties>
+   <image width="21" height="22" source="../sprites/props/helmet_blue.png"/>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="loot" value="door"/>
+    <property name="pivot_x" type="int" value="7"/>
+    <property name="pivot_y" type="int" value="-64"/>
+   </properties>
+   <image width="64" height="128" source="../sprites/props/door_proxy.png"/>
+   <objectgroup draworder="index"/>
+  </tile>
+ </tileset>
  <layer name="Terrain" width="100" height="100">
   <properties>
    <property name="collision" type="bool" value="true"/>
@@ -435,56 +3919,56 @@
 </data>
  </layer>
  <objectgroup name="Doors">
-  <object id="324" gid="543" x="1465" y="3712" width="64" height="128" rotation="90"/>
-  <object id="326" gid="543" x="1593" y="3840" width="64" height="128" rotation="-90"/>
-  <object id="327" gid="543" x="839" y="3712" width="64" height="128" rotation="90"/>
-  <object id="328" gid="543" x="967" y="3840" width="64" height="128" rotation="-90"/>
-  <object id="329" gid="543" x="1465" y="2880" width="64" height="128" rotation="90"/>
-  <object id="330" gid="543" x="1593" y="3008" width="64" height="128" rotation="-90"/>
-  <object id="331" gid="543" x="839" y="2880" width="64" height="128" rotation="90"/>
-  <object id="332" gid="543" x="967" y="3008" width="64" height="128" rotation="-90"/>
-  <object id="333" gid="543" x="839" y="1984" width="64" height="128" rotation="90"/>
-  <object id="334" gid="543" x="967" y="2112" width="64" height="128" rotation="-90"/>
-  <object id="335" gid="543" x="1465" y="1984" width="64" height="128" rotation="90"/>
-  <object id="336" gid="543" x="1593" y="2112" width="64" height="128" rotation="-90"/>
-  <object id="337" gid="543" x="1465" y="1280" width="64" height="128" rotation="90"/>
-  <object id="338" gid="543" x="1593" y="1408" width="64" height="128" rotation="-90"/>
-  <object id="339" gid="543" x="960" y="903" width="64" height="128"/>
-  <object id="340" gid="543" x="1017" y="1280" width="64" height="128" rotation="90"/>
-  <object id="341" gid="543" x="1991" y="2048" width="64" height="128" rotation="90"/>
-  <object id="342" gid="543" x="2119" y="2176" width="64" height="128" rotation="-90"/>
-  <object id="345" gid="543" x="1991" y="3456" width="64" height="128" rotation="90"/>
-  <object id="346" gid="543" x="2119" y="3584" width="64" height="128" rotation="-90"/>
-  <object id="347" gid="543" x="3513" y="3456" width="64" height="128" rotation="90"/>
-  <object id="348" gid="543" x="3641" y="3584" width="64" height="128" rotation="-90"/>
-  <object id="351" gid="543" x="3449" y="2048" width="64" height="128" rotation="90"/>
-  <object id="352" gid="543" x="3577" y="2176" width="64" height="128" rotation="-90"/>
-  <object id="353" gid="543" x="3655" y="1216" width="64" height="128" rotation="90"/>
-  <object id="354" gid="543" x="3783" y="1344" width="64" height="128" rotation="-90"/>
-  <object id="355" gid="543" x="3975" y="896" width="64" height="128" rotation="90"/>
-  <object id="356" gid="543" x="4103" y="1024" width="64" height="128" rotation="-90"/>
-  <object id="357" gid="543" x="2624" y="1401" width="64" height="128" rotation="180"/>
-  <object id="358" gid="543" x="2496" y="1529" width="64" height="128"/>
-  <object id="359" gid="543" x="3129" y="960" width="64" height="128" rotation="-90"/>
-  <object id="360" gid="543" x="1856" y="5177" width="64" height="128"/>
-  <object id="361" gid="543" x="1984" y="5049" width="64" height="128" rotation="180"/>
-  <object id="362" gid="543" x="1856" y="4487" width="64" height="128"/>
-  <object id="363" gid="543" x="1984" y="4359" width="64" height="128" rotation="180"/>
-  <object id="364" gid="543" x="2176" y="4807" width="64" height="128"/>
-  <object id="365" gid="543" x="2304" y="4679" width="64" height="128" rotation="180"/>
-  <object id="366" gid="543" x="3200" y="4423" width="64" height="128"/>
-  <object id="368" gid="543" x="3520" y="4487" width="64" height="128"/>
-  <object id="369" gid="543" x="3648" y="4359" width="64" height="128" rotation="180"/>
-  <object id="370" gid="543" x="4544" y="4487" width="64" height="128"/>
-  <object id="371" gid="543" x="4672" y="4359" width="64" height="128" rotation="180"/>
-  <object id="372" gid="543" x="4544" y="5177" width="64" height="128"/>
-  <object id="373" gid="543" x="4672" y="5049" width="64" height="128" rotation="180"/>
-  <object id="374" gid="543" x="4224" y="4807" width="64" height="128"/>
-  <object id="375" gid="543" x="4352" y="4679" width="64" height="128" rotation="180"/>
-  <object id="376" gid="543" x="4409" y="1344" width="64" height="128" rotation="-90"/>
-  <object id="377" gid="543" x="4281" y="1216" width="64" height="128" rotation="90"/>
-  <object id="463" gid="543" x="4937" y="5056" width="64" height="128" rotation="90"/>
-  <object id="464" gid="543" x="5065" y="5184" width="64" height="128" rotation="-90"/>
+  <object id="324" type="loot" gid="543" x="1465" y="3712" width="64" height="128" rotation="90"/>
+  <object id="326" type="loot" gid="543" x="1593" y="3840" width="64" height="128" rotation="-90"/>
+  <object id="327" type="loot" gid="543" x="839" y="3712" width="64" height="128" rotation="90"/>
+  <object id="328" type="loot" gid="543" x="967" y="3840" width="64" height="128" rotation="-90"/>
+  <object id="329" type="loot" gid="543" x="1465" y="2880" width="64" height="128" rotation="90"/>
+  <object id="330" type="loot" gid="543" x="1593" y="3008" width="64" height="128" rotation="-90"/>
+  <object id="331" type="loot" gid="543" x="839" y="2880" width="64" height="128" rotation="90"/>
+  <object id="332" type="loot" gid="543" x="967" y="3008" width="64" height="128" rotation="-90"/>
+  <object id="333" type="loot" gid="543" x="839" y="1984" width="64" height="128" rotation="90"/>
+  <object id="334" type="loot" gid="543" x="967" y="2112" width="64" height="128" rotation="-90"/>
+  <object id="335" type="loot" gid="543" x="1465" y="1984" width="64" height="128" rotation="90"/>
+  <object id="336" type="loot" gid="543" x="1593" y="2112" width="64" height="128" rotation="-90"/>
+  <object id="337" type="loot" gid="543" x="1465" y="1280" width="64" height="128" rotation="90"/>
+  <object id="338" type="loot" gid="543" x="1593" y="1408" width="64" height="128" rotation="-90"/>
+  <object id="339" type="loot" gid="543" x="960" y="903" width="64" height="128"/>
+  <object id="340" type="loot" gid="543" x="1017" y="1280" width="64" height="128" rotation="90"/>
+  <object id="341" type="loot" gid="543" x="1991" y="2048" width="64" height="128" rotation="90"/>
+  <object id="342" type="loot" gid="543" x="2119" y="2176" width="64" height="128" rotation="-90"/>
+  <object id="345" type="loot" gid="543" x="1991" y="3456" width="64" height="128" rotation="90"/>
+  <object id="346" type="loot" gid="543" x="2119" y="3584" width="64" height="128" rotation="-90"/>
+  <object id="347" type="loot" gid="543" x="3513" y="3456" width="64" height="128" rotation="90"/>
+  <object id="348" type="loot" gid="543" x="3641" y="3584" width="64" height="128" rotation="-90"/>
+  <object id="351" type="loot" gid="543" x="3449" y="2048" width="64" height="128" rotation="90"/>
+  <object id="352" type="loot" gid="543" x="3577" y="2176" width="64" height="128" rotation="-90"/>
+  <object id="353" type="loot" gid="543" x="3655" y="1216" width="64" height="128" rotation="90"/>
+  <object id="354" type="loot" gid="543" x="3783" y="1344" width="64" height="128" rotation="-90"/>
+  <object id="355" type="loot" gid="543" x="3975" y="896" width="64" height="128" rotation="90"/>
+  <object id="356" type="loot" gid="543" x="4103" y="1024" width="64" height="128" rotation="-90"/>
+  <object id="357" type="loot" gid="543" x="2624" y="1401" width="64" height="128" rotation="180"/>
+  <object id="358" type="loot" gid="543" x="2496" y="1529" width="64" height="128"/>
+  <object id="359" type="loot" gid="543" x="3129" y="960" width="64" height="128" rotation="-90"/>
+  <object id="360" type="loot" gid="543" x="1856" y="5177" width="64" height="128"/>
+  <object id="361" type="loot" gid="543" x="1984" y="5049" width="64" height="128" rotation="180"/>
+  <object id="362" type="loot" gid="543" x="1856" y="4487" width="64" height="128"/>
+  <object id="363" type="loot" gid="543" x="1984" y="4359" width="64" height="128" rotation="180"/>
+  <object id="364" type="loot" gid="543" x="2176" y="4807" width="64" height="128"/>
+  <object id="365" type="loot" gid="543" x="2304" y="4679" width="64" height="128" rotation="180"/>
+  <object id="366" type="loot" gid="543" x="3200" y="4423" width="64" height="128"/>
+  <object id="368" type="loot" gid="543" x="3520" y="4487" width="64" height="128"/>
+  <object id="369" type="loot" gid="543" x="3648" y="4359" width="64" height="128" rotation="180"/>
+  <object id="370" type="loot" gid="543" x="4544" y="4487" width="64" height="128"/>
+  <object id="371" type="loot" gid="543" x="4672" y="4359" width="64" height="128" rotation="180"/>
+  <object id="372" type="loot" gid="543" x="4544" y="5177" width="64" height="128"/>
+  <object id="373" type="loot" gid="543" x="4672" y="5049" width="64" height="128" rotation="180"/>
+  <object id="374" type="loot" gid="543" x="4224" y="4807" width="64" height="128"/>
+  <object id="375" type="loot" gid="543" x="4352" y="4679" width="64" height="128" rotation="180"/>
+  <object id="376" type="loot" gid="543" x="4409" y="1344" width="64" height="128" rotation="-90"/>
+  <object id="377" type="loot" gid="543" x="4281" y="1216" width="64" height="128" rotation="90"/>
+  <object id="463" type="loot" gid="543" x="4937" y="5056" width="64" height="128" rotation="90"/>
+  <object id="464" type="loot" gid="543" x="5065" y="5184" width="64" height="128" rotation="-90"/>
  </objectgroup>
  <objectgroup name="Objects">
   <object id="102" gid="450" x="2387" y="3418" width="64" height="64" rotation="-510.017"/>
@@ -497,240 +3981,240 @@
   <object id="203" gid="3221225983" x="4271.38" y="1266" width="64" height="64" rotation="176.15"/>
  </objectgroup>
  <objectgroup name="Loot">
-  <object id="41" gid="539" x="1442" y="2170" width="25" height="31"/>
-  <object id="42" gid="539" x="966" y="2160" width="25" height="31"/>
-  <object id="43" gid="539" x="1345" y="1966" width="25" height="31"/>
-  <object id="44" gid="539" x="987" y="2174" width="25" height="31"/>
-  <object id="45" gid="539" x="1083" y="1959" width="25" height="31"/>
-  <object id="46" gid="539" x="1431" y="3058" width="25" height="31"/>
-  <object id="47" gid="539" x="966" y="3051" width="25" height="31"/>
-  <object id="48" gid="539" x="1426" y="2855" width="25" height="31"/>
-  <object id="49" gid="539" x="987" y="3065" width="25" height="31"/>
-  <object id="50" gid="539" x="1133" y="2870" width="25" height="31"/>
-  <object id="51" gid="539" x="1460" y="3890" width="25" height="31" rotation="-59.2603"/>
-  <object id="52" gid="539" x="970" y="3887" width="25" height="31"/>
-  <object id="85" gid="539" x="2496" y="2624" width="25" height="31"/>
-  <object id="86" gid="539" x="2213" y="2796" width="25" height="31"/>
-  <object id="87" gid="539" x="2245" y="2829" width="25" height="31" rotation="-67.316"/>
-  <object id="93" gid="539" x="2138" y="2031" width="25" height="31" rotation="31.4346"/>
-  <object id="94" gid="539" x="2139" y="2221" width="25" height="31"/>
-  <object id="112" gid="539" x="2977" y="2021" width="25" height="31" rotation="-67.316"/>
-  <object id="113" gid="539" x="3001" y="2012" width="25" height="31" rotation="-152.236"/>
-  <object id="115" gid="539" x="3459" y="2634" width="25" height="31" rotation="-67.316"/>
-  <object id="116" gid="539" x="3272" y="2613" width="25" height="31" rotation="-145.999"/>
-  <object id="117" gid="539" x="3261" y="3436" width="25" height="31" rotation="-67.316"/>
-  <object id="118" gid="539" x="3056" y="3588" width="25" height="31" rotation="-67.316"/>
-  <object id="119" gid="539" x="3025" y="3602" width="25" height="31" rotation="-334.383"/>
-  <object id="120" gid="539" x="2576" y="3626" width="25" height="31" rotation="-335.906"/>
-  <object id="121" gid="539" x="2591" y="3444" width="25" height="31" rotation="-388.568"/>
-  <object id="128" gid="540" x="983" y="3707" width="48" height="40"/>
-  <object id="129" gid="540" x="3455" y="3405" width="48" height="40" rotation="-245.384"/>
-  <object id="132" gid="540" x="3158" y="2233" width="48" height="40"/>
-  <object id="135" gid="541" x="1000" y="3998" width="19" height="10" rotation="-53.3584"/>
-  <object id="136" gid="541" x="1236" y="3684" width="19" height="10" rotation="30.921"/>
-  <object id="137" gid="541" x="1413" y="3044" width="19" height="10" rotation="-44.0511"/>
-  <object id="138" gid="541" x="1355" y="2145" width="19" height="10" rotation="-30.3869"/>
-  <object id="139" gid="541" x="1006" y="1960" width="19" height="10" rotation="-31.5621"/>
-  <object id="140" gid="541" x="2324" y="2075" width="19" height="10" rotation="-300.582"/>
-  <object id="141" gid="541" x="2581" y="2005" width="19" height="10" rotation="-326.671"/>
-  <object id="146" gid="541" x="3066" y="2199" width="19" height="10" rotation="-328.308"/>
-  <object id="147" gid="541" x="3440" y="2205" width="19" height="10" rotation="-38.525"/>
-  <object id="148" gid="541" x="3379" y="2784" width="19" height="10" rotation="-207.898"/>
-  <object id="149" gid="541" x="3043" y="2672" width="19" height="10" rotation="-323.265"/>
-  <object id="150" gid="541" x="3040" y="3429" width="19" height="10" rotation="-38.1152"/>
-  <object id="155" gid="539" x="979" y="4139" width="25" height="31" rotation="-286.679"/>
-  <object id="156" gid="539" x="1119" y="4200" width="25" height="31"/>
-  <object id="157" gid="539" x="1215" y="3940" width="25" height="31"/>
-  <object id="158" gid="539" x="1416" y="3701" width="25" height="31"/>
-  <object id="160" gid="539" x="877.516" y="4084.27" width="25" height="31" rotation="-40.388"/>
-  <object id="161" gid="540" x="1151" y="4347" width="48" height="40" rotation="-56.2802"/>
-  <object id="162" gid="541" x="2647" y="1195" width="19" height="10" rotation="-329.079"/>
-  <object id="163" gid="541" x="2510" y="740" width="19" height="10" rotation="-329.079"/>
-  <object id="164" gid="541" x="2774" y="943" width="19" height="10" rotation="-401.58"/>
-  <object id="165" gid="539" x="2456" y="1299" width="25" height="31" rotation="-199.457"/>
-  <object id="166" gid="539" x="2490" y="1112" width="25" height="31" rotation="-152.236"/>
-  <object id="167" gid="539" x="2971" y="1039" width="25" height="31" rotation="-234.687"/>
-  <object id="168" gid="539" x="2673" y="741" width="25" height="31" rotation="-427.919"/>
-  <object id="169" gid="541" x="2525" y="3627" width="19" height="10" rotation="-38.1152"/>
-  <object id="170" gid="541" x="2658" y="2988" width="19" height="10" rotation="-38.1152"/>
-  <object id="171" gid="540" x="1379" y="2856" width="48" height="40"/>
-  <object id="172" gid="540" x="2493" y="915" width="48" height="40" rotation="-294.228"/>
-  <object id="173" gid="540" x="2486" y="2803" width="48" height="40" rotation="-317.546"/>
-  <object id="177" gid="542" x="2524" y="716" width="21" height="22" rotation="-291.75"/>
-  <object id="179" gid="542" x="2183" y="2020" width="21" height="22" rotation="-291.75"/>
-  <object id="180" gid="542" x="3424" y="3044" width="21" height="22" rotation="-291.75"/>
-  <object id="181" gid="542" x="2432" y="3008" width="21" height="22" rotation="-291.75"/>
-  <object id="182" gid="542" x="2322" y="3431" width="21" height="22" rotation="-291.75"/>
-  <object id="183" gid="542" x="3288" y="3417" width="21" height="22" rotation="-291.75"/>
-  <object id="184" gid="542" x="3332" y="2202" width="21" height="22" rotation="-291.75"/>
-  <object id="185" gid="542" x="1263" y="2130" width="21" height="22" rotation="-291.75"/>
-  <object id="186" gid="542" x="1075" y="2846" width="21" height="22" rotation="-291.75"/>
-  <object id="187" gid="542" x="1040" y="3674" width="21" height="22" rotation="68.25"/>
-  <object id="189" gid="539" x="3557" y="645" width="25" height="31" rotation="-234.687"/>
-  <object id="190" gid="539" x="4117" y="1643" width="25" height="31" rotation="-234.687"/>
-  <object id="191" gid="539" x="4117.84" y="2252.76" width="25" height="31" rotation="-270.376"/>
-  <object id="193" gid="539" x="4136" y="3768" width="25" height="31" rotation="-234.687"/>
-  <object id="194" gid="539" x="4023" y="4165" width="25" height="31" rotation="-234.687"/>
-  <object id="195" gid="539" x="3265" y="4161" width="25" height="31" rotation="-234.687"/>
-  <object id="196" gid="539" x="2536" y="4299" width="25" height="31" rotation="-234.687"/>
-  <object id="217" gid="540" x="4096.32" y="706" width="48" height="40" rotation="-236.616"/>
-  <object id="218" gid="539" x="4034.7" y="1113.37" width="25" height="31" rotation="-180.336"/>
-  <object id="219" gid="542" x="4211.26" y="1378.34" width="21" height="22" rotation="-472.086"/>
-  <object id="220" gid="539" x="4254.35" y="881.077" width="25" height="31" rotation="-180.336"/>
-  <object id="221" gid="540" x="4268.06" y="1345.01" width="48" height="40" rotation="-180.336"/>
-  <object id="222" gid="539" x="3835.11" y="1353.54" width="25" height="31" rotation="-180.336"/>
-  <object id="223" gid="541" x="4249.36" y="1054.11" width="19" height="10" rotation="-233.694"/>
-  <object id="224" gid="539" x="3790" y="1164.8" width="25" height="31" rotation="-239.596"/>
-  <object id="225" gid="539" x="4129.18" y="852.81" width="25" height="31" rotation="-180.336"/>
-  <object id="226" gid="539" x="4371.34" y="967.124" width="25" height="31" rotation="-580.724"/>
-  <object id="227" gid="539" x="4280.01" y="1164.93" width="25" height="31" rotation="-180.336"/>
-  <object id="228" gid="541" x="4015.2" y="1369.49" width="19" height="10" rotation="-509.415"/>
-  <object id="229" gid="542" x="790" y="1378.49" width="21" height="22" rotation="-382.194"/>
-  <object id="230" gid="539" x="1109.53" y="929" width="25" height="31" rotation="-325.131"/>
-  <object id="231" gid="541" x="1015.06" y="1126.74" width="19" height="10" rotation="-492.024"/>
-  <object id="232" gid="541" x="1268.03" y="1251.78" width="19" height="10" rotation="-419.523"/>
-  <object id="233" gid="539" x="813.845" y="1229.3" width="25" height="31" rotation="-518.363"/>
-  <object id="234" gid="539" x="1373.51" y="1441.97" width="25" height="31" rotation="-289.901"/>
-  <object id="235" gid="539" x="1186.25" y="1409.42" width="25" height="31" rotation="-242.68"/>
-  <object id="236" gid="541" x="814.108" y="1392.3" width="19" height="10" rotation="-419.523"/>
-  <object id="237" gid="540" x="989.234" y="1407.95" width="48" height="40" rotation="-384.672"/>
-  <object id="244" gid="539" x="2038" y="5004" width="25" height="31" rotation="-180.336"/>
-  <object id="245" gid="539" x="2147" y="5002" width="25" height="31" rotation="-180.336"/>
-  <object id="246" gid="539" x="2037" y="4808" width="25" height="31" rotation="-180.336"/>
-  <object id="247" gid="539" x="1845" y="4806" width="25" height="31" rotation="-180.336"/>
-  <object id="248" gid="539" x="2030" y="4550" width="25" height="31" rotation="-180.336"/>
-  <object id="249" gid="539" x="2169" y="5015" width="25" height="31" rotation="-180.336"/>
-  <object id="250" gid="542" x="2022" y="5038" width="21" height="22" rotation="-472.086"/>
-  <object id="251" gid="541" x="1840" y="4687" width="19" height="10" rotation="-509.415"/>
-  <object id="252" gid="540" x="1847" y="4484" width="48" height="40" rotation="-180.336"/>
-  <object id="253" gid="541" x="1831" y="4835" width="19" height="10" rotation="-509.415"/>
-  <object id="254" gid="540" x="2378" y="5136" width="48" height="40" rotation="-180.336"/>
-  <object id="255" gid="539" x="954.393" y="4759.48" width="25" height="31" rotation="-494.931"/>
-  <object id="256" gid="539" x="900" y="4869" width="25" height="31" rotation="-180.336"/>
-  <object id="257" gid="539" x="1164" y="4885" width="25" height="31" rotation="127.543"/>
-  <object id="258" gid="539" x="676" y="4901" width="25" height="31" rotation="135.805"/>
-  <object id="259" gid="539" x="698" y="4896" width="25" height="31" rotation="-128.249"/>
-  <object id="260" gid="539" x="1304" y="4728" width="25" height="31" rotation="-494.931"/>
-  <object id="261" gid="539" x="1351" y="5220" width="25" height="31" rotation="-494.931"/>
-  <object id="262" gid="539" x="1374" y="5192" width="25" height="31" rotation="-387.06"/>
-  <object id="263" gid="539" x="760" y="5168" width="25" height="31" rotation="-451.773"/>
-  <object id="264" gid="539" x="895" y="5208" width="25" height="31" rotation="-553.057"/>
-  <object id="265" gid="539" x="626" y="4530" width="25" height="31" rotation="-494.931"/>
-  <object id="266" gid="539" x="640.837" y="4543" width="25" height="31" rotation="-400.723"/>
-  <object id="267" gid="539" x="1499" y="4505" width="25" height="31" rotation="-584.151"/>
-  <object id="268" gid="542" x="1461" y="5209" width="21" height="22" rotation="-472.086"/>
-  <object id="269" gid="539" x="591" y="4428" width="25" height="31" rotation="23.5647"/>
-  <object id="270" gid="539" x="619" y="4418" width="25" height="31" rotation="-250.505"/>
-  <object id="272" gid="539" x="3321.15" y="4497.88" width="25" height="31" rotation="-61.4785"/>
-  <object id="273" gid="539" x="3469.5" y="4518.46" width="25" height="31" rotation="33.6901"/>
-  <object id="274" gid="539" x="3157.69" y="4510.48" width="25" height="31" rotation="-303.051"/>
-  <object id="275" gid="539" x="3244.59" y="4880.27" width="25" height="31" rotation="-290.665"/>
-  <object id="276" gid="539" x="3246" y="4914" width="25" height="31" rotation="25.6462"/>
-  <object id="279" gid="541" x="3683.23" y="4584.08" width="19" height="10" rotation="-94.527"/>
-  <object id="280" gid="542" x="3167" y="4778" width="21" height="22"/>
-  <object id="281" gid="540" x="3656" y="4514" width="48" height="40" rotation="38.9382"/>
-  <object id="282" gid="541" x="3166.79" y="4882.23" width="19" height="10" rotation="-328.117"/>
-  <object id="283" gid="539" x="2748" y="5270" width="25" height="31" rotation="-301.546"/>
-  <object id="284" gid="539" x="2784" y="5288" width="25" height="31"/>
-  <object id="285" gid="539" x="3452" y="4800" width="25" height="31"/>
-  <object id="286" gid="539" x="3498" y="4781" width="25" height="31" rotation="-78.3393"/>
-  <object id="288" gid="541" x="4693.82" y="4693.61" width="19" height="10" rotation="689.415"/>
-  <object id="289" gid="539" x="4498.55" y="4579" width="25" height="31" rotation="360.336"/>
-  <object id="290" gid="1073742363" x="4683.55" y="4835" width="25" height="31" rotation="360.336"/>
-  <object id="291" gid="1073742363" x="4490.55" y="5033" width="25" height="31" rotation="360.336"/>
-  <object id="292" gid="1073742363" x="4359.55" y="5044" width="25" height="31" rotation="360.336"/>
-  <object id="293" gid="1073742365" x="4702.82" y="4841.61" width="19" height="10" rotation="689.415"/>
-  <object id="294" gid="1073742363" x="4491.55" y="4837" width="25" height="31" rotation="360.336"/>
-  <object id="295" gid="1073742364" x="4681.5" y="4522" width="48" height="40" rotation="360.336"/>
-  <object id="296" gid="1073742366" x="4527.12" y="5044.27" width="21" height="22" rotation="652.086"/>
-  <object id="297" gid="1073742363" x="4381.55" y="5031" width="25" height="31" rotation="360.336"/>
-  <object id="298" gid="1073742364" x="4150.5" y="5174" width="48" height="40" rotation="360.336"/>
-  <object id="300" gid="539" x="5090" y="4329" width="25" height="31"/>
-  <object id="301" gid="539" x="5142" y="4701" width="25" height="31"/>
-  <object id="302" gid="539" x="5054" y="4893" width="25" height="31"/>
-  <object id="303" gid="539" x="5210" y="5097" width="25" height="31"/>
-  <object id="304" gid="539" x="5284" y="4987" width="25" height="31"/>
-  <object id="305" gid="539" x="5260" y="4979" width="25" height="31"/>
-  <object id="306" gid="539" x="5612" y="4577" width="25" height="31"/>
-  <object id="307" gid="539" x="5594" y="4903" width="25" height="31"/>
-  <object id="308" gid="539" x="5308" y="4373" width="25" height="31"/>
-  <object id="309" gid="539" x="5416" y="4251" width="25" height="31"/>
-  <object id="310" gid="542" x="5232" y="5135" width="21" height="22"/>
-  <object id="379" gid="539" x="2872" y="2991" width="25" height="31" rotation="-67.316"/>
-  <object id="380" gid="539" x="2512" y="2647" width="25" height="31" rotation="-67.316"/>
-  <object id="381" gid="539" x="2304" y="2529" width="25" height="31" rotation="-67.316"/>
-  <object id="382" gid="539" x="2282.3" y="2513.16" width="25" height="31" rotation="-135.596"/>
-  <object id="383" gid="539" x="3266" y="2992" width="25" height="31" rotation="-121.165"/>
-  <object id="384" gid="539" x="3250" y="3061" width="25" height="31" rotation="-67.316"/>
-  <object id="386" gid="540" x="5110" y="2574" width="48" height="40" rotation="-245.384"/>
-  <object id="387" gid="540" x="3208" y="2550" width="48" height="40" rotation="-245.384"/>
-  <object id="388" gid="540" x="5508" y="2822" width="48" height="40" rotation="-245.384"/>
-  <object id="389" gid="539" x="5128" y="2853" width="25" height="31"/>
-  <object id="390" gid="539" x="5230" y="2661" width="25" height="31"/>
-  <object id="391" gid="539" x="5201" y="2627" width="25" height="31" rotation="45.5286"/>
-  <object id="392" gid="539" x="5669" y="2782" width="25" height="31" rotation="-63.2205"/>
-  <object id="393" gid="541" x="5479.33" y="2602.78" width="19" height="12" rotation="-41.317"/>
-  <object id="394" gid="541" x="5239" y="2618" width="19" height="12"/>
-  <object id="395" gid="541" x="5143" y="1399" width="19" height="12" rotation="-38.4017"/>
-  <object id="396" gid="539" x="5350" y="949" width="25" height="31" rotation="-36.016"/>
-  <object id="397" gid="539" x="5300.85" y="920.271" width="25" height="31" rotation="-299.552"/>
-  <object id="398" gid="539" x="5133" y="916" width="25" height="31" rotation="-298.179"/>
-  <object id="399" gid="540" x="5132" y="1080" width="48" height="40"/>
-  <object id="400" gid="539" x="5141" y="1381" width="25" height="31" rotation="-40.539"/>
-  <object id="401" gid="539" x="5682" y="694" width="25" height="31" rotation="-36.016"/>
-  <object id="402" gid="539" x="5702" y="718" width="25" height="31" rotation="-299.552"/>
-  <object id="403" gid="539" x="5574" y="1016" width="25" height="31" rotation="-298.179"/>
-  <object id="404" gid="539" x="4972" y="2847" width="25" height="31" rotation="-36.016"/>
-  <object id="405" gid="539" x="4927" y="2816" width="25" height="31" rotation="-299.552"/>
-  <object id="406" gid="539" x="5019" y="2464" width="25" height="31" rotation="-298.179"/>
-  <object id="407" gid="542" x="5210" y="943" width="21" height="22"/>
-  <object id="408" gid="539" x="4898" y="3951" width="25" height="31"/>
-  <object id="409" gid="539" x="5078" y="3889" width="25" height="31"/>
-  <object id="411" gid="539" x="5424" y="3511" width="25" height="31"/>
-  <object id="412" gid="539" x="5648" y="3719" width="25" height="31"/>
-  <object id="413" gid="539" x="4886" y="3509" width="25" height="31"/>
-  <object id="415" gid="539" x="4712" y="1931" width="25" height="31" rotation="-287.396"/>
-  <object id="416" gid="539" x="4680" y="1771" width="25" height="31" rotation="-65.7867"/>
-  <object id="419" gid="539" x="5709" y="1968" width="25" height="31"/>
-  <object id="420" gid="539" x="5716" y="1762" width="25" height="31"/>
-  <object id="421" gid="539" x="5714" y="1660" width="25" height="31"/>
-  <object id="422" gid="539" x="5719" y="1583" width="25" height="31"/>
-  <object id="424" gid="539" x="4098" y="3420" width="25" height="31"/>
-  <object id="425" gid="539" x="4101" y="3433" width="25" height="31" rotation="-297.592"/>
-  <object id="426" gid="540" x="4240" y="3448" width="48" height="40"/>
-  <object id="427" gid="541" x="5393" y="3676" width="19" height="12" rotation="-51.7121"/>
-  <object id="428" gid="541" x="5385" y="3814" width="19" height="12" rotation="-288.968"/>
-  <object id="429" gid="539" x="5419" y="3680" width="25" height="31"/>
-  <object id="430" gid="539" x="5461" y="3693" width="25" height="31" rotation="307.171"/>
-  <object id="431" gid="540" x="2505" y="3448" width="48" height="40"/>
-  <object id="432" gid="540" x="2357" y="2234" width="48" height="40"/>
-  <object id="434" gid="540" x="1148" y="1971" width="48" height="40"/>
-  <object id="435" gid="540" x="5323" y="4503" width="48" height="40"/>
-  <object id="436" gid="540" x="5452" y="3845" width="48" height="40"/>
-  <object id="437" gid="541" x="4310.87" y="2693.35" width="19" height="12" rotation="-80.627"/>
-  <object id="438" gid="541" x="4297" y="1948" width="19" height="12" rotation="-61.8863"/>
-  <object id="439" gid="539" x="4336" y="2003" width="25" height="31" rotation="-85.4686"/>
-  <object id="440" gid="539" x="4103" y="3076" width="25" height="31"/>
-  <object id="441" gid="539" x="4122.89" y="3080.65" width="25" height="31" rotation="-223.522"/>
-  <object id="443" gid="542" x="4123" y="2808" width="21" height="22"/>
-  <object id="444" gid="542" x="4138" y="1979" width="21" height="22"/>
-  <object id="448" gid="541" x="1682" y="623" width="19" height="10" rotation="-419.523"/>
-  <object id="449" gid="539" x="1718" y="634" width="25" height="31" rotation="-414.884"/>
-  <object id="450" gid="541" x="5626" y="4902" width="19" height="12" rotation="-51.7121"/>
-  <object id="451" gid="541" x="892" y="4870" width="19" height="12" rotation="-51.7121"/>
-  <object id="452" gid="541" x="1354" y="5219" width="19" height="12" rotation="-51.7121"/>
-  <object id="455" gid="539" x="3322" y="3634" width="25" height="31" rotation="-67.316"/>
-  <object id="456" gid="541" x="5713" y="695" width="19" height="12" rotation="-38.4017"/>
-  <object id="457" gid="1073742363" x="4946" y="5271" width="31.953" height="39.0409" rotation="360.336"/>
-  <object id="458" gid="1073742365" x="4936" y="5294" width="19" height="10" rotation="689.415"/>
-  <object id="465" gid="539" x="3304" y="1477" width="25" height="31" rotation="-234.687"/>
-  <object id="466" gid="541" x="3336" y="1475" width="19" height="10" rotation="-229.71"/>
-  <object id="467" gid="541" x="4715" y="1138" width="19" height="12" rotation="-38.4017"/>
-  <object id="468" gid="539" x="4798" y="1399" width="25" height="31" rotation="44.8277"/>
-  <object id="469" gid="541" x="746" y="1041" width="19" height="10" rotation="-419.523"/>
-  <object id="470" gid="539" x="796" y="1034" width="25" height="31" rotation="-414.884"/>
-  <object id="471" gid="539" x="1663" y="1698" width="25" height="31"/>
-  <object id="472" gid="541" x="1666" y="1702" width="19" height="10" rotation="51.5804"/>
+  <object id="41" type="loot" gid="539" x="1442" y="2170" width="25" height="31"/>
+  <object id="42" type="loot" gid="539" x="966" y="2160" width="25" height="31"/>
+  <object id="43" type="loot" gid="539" x="1345" y="1966" width="25" height="31"/>
+  <object id="44" type="loot" gid="539" x="987" y="2174" width="25" height="31"/>
+  <object id="45" type="loot" gid="539" x="1083" y="1959" width="25" height="31"/>
+  <object id="46" type="loot" gid="539" x="1431" y="3058" width="25" height="31"/>
+  <object id="47" type="loot" gid="539" x="966" y="3051" width="25" height="31"/>
+  <object id="48" type="loot" gid="539" x="1426" y="2855" width="25" height="31"/>
+  <object id="49" type="loot" gid="539" x="987" y="3065" width="25" height="31"/>
+  <object id="50" type="loot" gid="539" x="1133" y="2870" width="25" height="31"/>
+  <object id="51" type="loot" gid="539" x="1460" y="3890" width="25" height="31" rotation="-59.2603"/>
+  <object id="52" type="loot" gid="539" x="970" y="3887" width="25" height="31"/>
+  <object id="85" type="loot" gid="539" x="2496" y="2624" width="25" height="31"/>
+  <object id="86" type="loot" gid="539" x="2213" y="2796" width="25" height="31"/>
+  <object id="87" type="loot" gid="539" x="2245" y="2829" width="25" height="31" rotation="-67.316"/>
+  <object id="93" type="loot" gid="539" x="2138" y="2031" width="25" height="31" rotation="31.4346"/>
+  <object id="94" type="loot" gid="539" x="2139" y="2221" width="25" height="31"/>
+  <object id="112" type="loot" gid="539" x="2977" y="2021" width="25" height="31" rotation="-67.316"/>
+  <object id="113" type="loot" gid="539" x="3001" y="2012" width="25" height="31" rotation="-152.236"/>
+  <object id="115" type="loot" gid="539" x="3459" y="2634" width="25" height="31" rotation="-67.316"/>
+  <object id="116" type="loot" gid="539" x="3272" y="2613" width="25" height="31" rotation="-145.999"/>
+  <object id="117" type="loot" gid="539" x="3261" y="3436" width="25" height="31" rotation="-67.316"/>
+  <object id="118" type="loot" gid="539" x="3056" y="3588" width="25" height="31" rotation="-67.316"/>
+  <object id="119" type="loot" gid="539" x="3025" y="3602" width="25" height="31" rotation="-334.383"/>
+  <object id="120" type="loot" gid="539" x="2576" y="3626" width="25" height="31" rotation="-335.906"/>
+  <object id="121" type="loot" gid="539" x="2591" y="3444" width="25" height="31" rotation="-388.568"/>
+  <object id="128" type="loot" gid="540" x="983" y="3707" width="48" height="40"/>
+  <object id="129" type="loot" gid="540" x="3455" y="3405" width="48" height="40" rotation="-245.384"/>
+  <object id="132" type="loot" gid="540" x="3158" y="2233" width="48" height="40"/>
+  <object id="135" type="loot" gid="541" x="1000" y="3998" width="19" height="10" rotation="-53.3584"/>
+  <object id="136" type="loot" gid="541" x="1236" y="3684" width="19" height="10" rotation="30.921"/>
+  <object id="137" type="loot" gid="541" x="1413" y="3044" width="19" height="10" rotation="-44.0511"/>
+  <object id="138" type="loot" gid="541" x="1355" y="2145" width="19" height="10" rotation="-30.3869"/>
+  <object id="139" type="loot" gid="541" x="1006" y="1960" width="19" height="10" rotation="-31.5621"/>
+  <object id="140" type="loot" gid="541" x="2324" y="2075" width="19" height="10" rotation="-300.582"/>
+  <object id="141" type="loot" gid="541" x="2581" y="2005" width="19" height="10" rotation="-326.671"/>
+  <object id="146" type="loot" gid="541" x="3066" y="2199" width="19" height="10" rotation="-328.308"/>
+  <object id="147" type="loot" gid="541" x="3440" y="2205" width="19" height="10" rotation="-38.525"/>
+  <object id="148" type="loot" gid="541" x="3379" y="2784" width="19" height="10" rotation="-207.898"/>
+  <object id="149" type="loot" gid="541" x="3043" y="2672" width="19" height="10" rotation="-323.265"/>
+  <object id="150" type="loot" gid="541" x="3040" y="3429" width="19" height="10" rotation="-38.1152"/>
+  <object id="155" type="loot" gid="539" x="979" y="4139" width="25" height="31" rotation="-286.679"/>
+  <object id="156" type="loot" gid="539" x="1119" y="4200" width="25" height="31"/>
+  <object id="157" type="loot" gid="539" x="1215" y="3940" width="25" height="31"/>
+  <object id="158" type="loot" gid="539" x="1416" y="3701" width="25" height="31"/>
+  <object id="160" type="loot" gid="539" x="877.516" y="4084.27" width="25" height="31" rotation="-40.388"/>
+  <object id="161" type="loot" gid="540" x="1151" y="4347" width="48" height="40" rotation="-56.2802"/>
+  <object id="162" type="loot" gid="541" x="2647" y="1195" width="19" height="10" rotation="-329.079"/>
+  <object id="163" type="loot" gid="541" x="2510" y="740" width="19" height="10" rotation="-329.079"/>
+  <object id="164" type="loot" gid="541" x="2774" y="943" width="19" height="10" rotation="-401.58"/>
+  <object id="165" type="loot" gid="539" x="2456" y="1299" width="25" height="31" rotation="-199.457"/>
+  <object id="166" type="loot" gid="539" x="2490" y="1112" width="25" height="31" rotation="-152.236"/>
+  <object id="167" type="loot" gid="539" x="2971" y="1039" width="25" height="31" rotation="-234.687"/>
+  <object id="168" type="loot" gid="539" x="2673" y="741" width="25" height="31" rotation="-427.919"/>
+  <object id="169" type="loot" gid="541" x="2525" y="3627" width="19" height="10" rotation="-38.1152"/>
+  <object id="170" type="loot" gid="541" x="2658" y="2988" width="19" height="10" rotation="-38.1152"/>
+  <object id="171" type="loot" gid="540" x="1379" y="2856" width="48" height="40"/>
+  <object id="172" type="loot" gid="540" x="2493" y="915" width="48" height="40" rotation="-294.228"/>
+  <object id="173" type="loot" gid="540" x="2486" y="2803" width="48" height="40" rotation="-317.546"/>
+  <object id="177" type="loot" gid="542" x="2524" y="716" width="21" height="22" rotation="-291.75"/>
+  <object id="179" type="loot" gid="542" x="2183" y="2020" width="21" height="22" rotation="-291.75"/>
+  <object id="180" type="loot" gid="542" x="3424" y="3044" width="21" height="22" rotation="-291.75"/>
+  <object id="181" type="loot" gid="542" x="2432" y="3008" width="21" height="22" rotation="-291.75"/>
+  <object id="182" type="loot" gid="542" x="2322" y="3431" width="21" height="22" rotation="-291.75"/>
+  <object id="183" type="loot" gid="542" x="3288" y="3417" width="21" height="22" rotation="-291.75"/>
+  <object id="184" type="loot" gid="542" x="3332" y="2202" width="21" height="22" rotation="-291.75"/>
+  <object id="185" type="loot" gid="542" x="1263" y="2130" width="21" height="22" rotation="-291.75"/>
+  <object id="186" type="loot" gid="542" x="1075" y="2846" width="21" height="22" rotation="-291.75"/>
+  <object id="187" type="loot" gid="542" x="1040" y="3674" width="21" height="22" rotation="68.25"/>
+  <object id="189" type="loot" gid="539" x="3557" y="645" width="25" height="31" rotation="-234.687"/>
+  <object id="190" type="loot" gid="539" x="4117" y="1643" width="25" height="31" rotation="-234.687"/>
+  <object id="191" type="loot" gid="539" x="4117.84" y="2252.76" width="25" height="31" rotation="-270.376"/>
+  <object id="193" type="loot" gid="539" x="4136" y="3768" width="25" height="31" rotation="-234.687"/>
+  <object id="194" type="loot" gid="539" x="4023" y="4165" width="25" height="31" rotation="-234.687"/>
+  <object id="195" type="loot" gid="539" x="3265" y="4161" width="25" height="31" rotation="-234.687"/>
+  <object id="196" type="loot" gid="539" x="2536" y="4299" width="25" height="31" rotation="-234.687"/>
+  <object id="217" type="loot" gid="540" x="4096.32" y="706" width="48" height="40" rotation="-236.616"/>
+  <object id="218" type="loot" gid="539" x="4034.7" y="1113.37" width="25" height="31" rotation="-180.336"/>
+  <object id="219" type="loot" gid="542" x="4211.26" y="1378.34" width="21" height="22" rotation="-472.086"/>
+  <object id="220" type="loot" gid="539" x="4254.35" y="881.077" width="25" height="31" rotation="-180.336"/>
+  <object id="221" type="loot" gid="540" x="4268.06" y="1345.01" width="48" height="40" rotation="-180.336"/>
+  <object id="222" type="loot" gid="539" x="3835.11" y="1353.54" width="25" height="31" rotation="-180.336"/>
+  <object id="223" type="loot" gid="541" x="4249.36" y="1054.11" width="19" height="10" rotation="-233.694"/>
+  <object id="224" type="loot" gid="539" x="3790" y="1164.8" width="25" height="31" rotation="-239.596"/>
+  <object id="225" type="loot" gid="539" x="4129.18" y="852.81" width="25" height="31" rotation="-180.336"/>
+  <object id="226" type="loot" gid="539" x="4371.34" y="967.124" width="25" height="31" rotation="-580.724"/>
+  <object id="227" type="loot" gid="539" x="4280.01" y="1164.93" width="25" height="31" rotation="-180.336"/>
+  <object id="228" type="loot" gid="541" x="4015.2" y="1369.49" width="19" height="10" rotation="-509.415"/>
+  <object id="229" type="loot" gid="542" x="790" y="1378.49" width="21" height="22" rotation="-382.194"/>
+  <object id="230" type="loot" gid="539" x="1109.53" y="929" width="25" height="31" rotation="-325.131"/>
+  <object id="231" type="loot" gid="541" x="1015.06" y="1126.74" width="19" height="10" rotation="-492.024"/>
+  <object id="232" type="loot" gid="541" x="1268.03" y="1251.78" width="19" height="10" rotation="-419.523"/>
+  <object id="233" type="loot" gid="539" x="813.845" y="1229.3" width="25" height="31" rotation="-518.363"/>
+  <object id="234" type="loot" gid="539" x="1373.51" y="1441.97" width="25" height="31" rotation="-289.901"/>
+  <object id="235" type="loot" gid="539" x="1186.25" y="1409.42" width="25" height="31" rotation="-242.68"/>
+  <object id="236" type="loot" gid="541" x="814.108" y="1392.3" width="19" height="10" rotation="-419.523"/>
+  <object id="237" type="loot" gid="540" x="989.234" y="1407.95" width="48" height="40" rotation="-384.672"/>
+  <object id="244" type="loot" gid="539" x="2038" y="5004" width="25" height="31" rotation="-180.336"/>
+  <object id="245" type="loot" gid="539" x="2147" y="5002" width="25" height="31" rotation="-180.336"/>
+  <object id="246" type="loot" gid="539" x="2037" y="4808" width="25" height="31" rotation="-180.336"/>
+  <object id="247" type="loot" gid="539" x="1845" y="4806" width="25" height="31" rotation="-180.336"/>
+  <object id="248" type="loot" gid="539" x="2030" y="4550" width="25" height="31" rotation="-180.336"/>
+  <object id="249" type="loot" gid="539" x="2169" y="5015" width="25" height="31" rotation="-180.336"/>
+  <object id="250" type="loot" gid="542" x="2022" y="5038" width="21" height="22" rotation="-472.086"/>
+  <object id="251" type="loot" gid="541" x="1840" y="4687" width="19" height="10" rotation="-509.415"/>
+  <object id="252" type="loot" gid="540" x="1847" y="4484" width="48" height="40" rotation="-180.336"/>
+  <object id="253" type="loot" gid="541" x="1831" y="4835" width="19" height="10" rotation="-509.415"/>
+  <object id="254" type="loot" gid="540" x="2378" y="5136" width="48" height="40" rotation="-180.336"/>
+  <object id="255" type="loot" gid="539" x="954.393" y="4759.48" width="25" height="31" rotation="-494.931"/>
+  <object id="256" type="loot" gid="539" x="900" y="4869" width="25" height="31" rotation="-180.336"/>
+  <object id="257" type="loot" gid="539" x="1164" y="4885" width="25" height="31" rotation="127.543"/>
+  <object id="258" type="loot" gid="539" x="676" y="4901" width="25" height="31" rotation="135.805"/>
+  <object id="259" type="loot" gid="539" x="698" y="4896" width="25" height="31" rotation="-128.249"/>
+  <object id="260" type="loot" gid="539" x="1304" y="4728" width="25" height="31" rotation="-494.931"/>
+  <object id="261" type="loot" gid="539" x="1351" y="5220" width="25" height="31" rotation="-494.931"/>
+  <object id="262" type="loot" gid="539" x="1374" y="5192" width="25" height="31" rotation="-387.06"/>
+  <object id="263" type="loot" gid="539" x="760" y="5168" width="25" height="31" rotation="-451.773"/>
+  <object id="264" type="loot" gid="539" x="895" y="5208" width="25" height="31" rotation="-553.057"/>
+  <object id="265" type="loot" gid="539" x="626" y="4530" width="25" height="31" rotation="-494.931"/>
+  <object id="266" type="loot" gid="539" x="640.837" y="4543" width="25" height="31" rotation="-400.723"/>
+  <object id="267" type="loot" gid="539" x="1499" y="4505" width="25" height="31" rotation="-584.151"/>
+  <object id="268" type="loot" gid="542" x="1461" y="5209" width="21" height="22" rotation="-472.086"/>
+  <object id="269" type="loot" gid="539" x="591" y="4428" width="25" height="31" rotation="23.5647"/>
+  <object id="270" type="loot" gid="539" x="619" y="4418" width="25" height="31" rotation="-250.505"/>
+  <object id="272" type="loot" gid="539" x="3321.15" y="4497.88" width="25" height="31" rotation="-61.4785"/>
+  <object id="273" type="loot" gid="539" x="3469.5" y="4518.46" width="25" height="31" rotation="33.6901"/>
+  <object id="274" type="loot" gid="539" x="3157.69" y="4510.48" width="25" height="31" rotation="-303.051"/>
+  <object id="275" type="loot" gid="539" x="3244.59" y="4880.27" width="25" height="31" rotation="-290.665"/>
+  <object id="276" type="loot" gid="539" x="3246" y="4914" width="25" height="31" rotation="25.6462"/>
+  <object id="279" type="loot" gid="541" x="3683.23" y="4584.08" width="19" height="10" rotation="-94.527"/>
+  <object id="280" type="loot" gid="542" x="3167" y="4778" width="21" height="22"/>
+  <object id="281" type="loot" gid="540" x="3656" y="4514" width="48" height="40" rotation="38.9382"/>
+  <object id="282" type="loot" gid="541" x="3166.79" y="4882.23" width="19" height="10" rotation="-328.117"/>
+  <object id="283" type="loot" gid="539" x="2748" y="5270" width="25" height="31" rotation="-301.546"/>
+  <object id="284" type="loot" gid="539" x="2784" y="5288" width="25" height="31"/>
+  <object id="285" type="loot" gid="539" x="3452" y="4800" width="25" height="31"/>
+  <object id="286" type="loot" gid="539" x="3498" y="4781" width="25" height="31" rotation="-78.3393"/>
+  <object id="288" type="loot" gid="541" x="4693.82" y="4693.61" width="19" height="10" rotation="689.415"/>
+  <object id="289" type="loot" gid="539" x="4498.55" y="4579" width="25" height="31" rotation="360.336"/>
+  <object id="290" type="loot" gid="1073742363" x="4683.55" y="4835" width="25" height="31" rotation="360.336"/>
+  <object id="291" type="loot" gid="1073742363" x="4490.55" y="5033" width="25" height="31" rotation="360.336"/>
+  <object id="292" type="loot" gid="1073742363" x="4359.55" y="5044" width="25" height="31" rotation="360.336"/>
+  <object id="293" type="loot" gid="1073742365" x="4702.82" y="4841.61" width="19" height="10" rotation="689.415"/>
+  <object id="294" type="loot" gid="1073742363" x="4491.55" y="4837" width="25" height="31" rotation="360.336"/>
+  <object id="295" type="loot" gid="1073742364" x="4681.5" y="4522" width="48" height="40" rotation="360.336"/>
+  <object id="296" type="loot" gid="1073742366" x="4527.12" y="5044.27" width="21" height="22" rotation="652.086"/>
+  <object id="297" type="loot" gid="1073742363" x="4381.55" y="5031" width="25" height="31" rotation="360.336"/>
+  <object id="298" type="loot" gid="1073742364" x="4150.5" y="5174" width="48" height="40" rotation="360.336"/>
+  <object id="300" type="loot" gid="539" x="5090" y="4329" width="25" height="31"/>
+  <object id="301" type="loot" gid="539" x="5142" y="4701" width="25" height="31"/>
+  <object id="302" type="loot" gid="539" x="5054" y="4893" width="25" height="31"/>
+  <object id="303" type="loot" gid="539" x="5210" y="5097" width="25" height="31"/>
+  <object id="304" type="loot" gid="539" x="5284" y="4987" width="25" height="31"/>
+  <object id="305" type="loot" gid="539" x="5260" y="4979" width="25" height="31"/>
+  <object id="306" type="loot" gid="539" x="5612" y="4577" width="25" height="31"/>
+  <object id="307" type="loot" gid="539" x="5594" y="4903" width="25" height="31"/>
+  <object id="308" type="loot" gid="539" x="5308" y="4373" width="25" height="31"/>
+  <object id="309" type="loot" gid="539" x="5416" y="4251" width="25" height="31"/>
+  <object id="310" type="loot" gid="542" x="5232" y="5135" width="21" height="22"/>
+  <object id="379" type="loot" gid="539" x="2872" y="2991" width="25" height="31" rotation="-67.316"/>
+  <object id="380" type="loot" gid="539" x="2512" y="2647" width="25" height="31" rotation="-67.316"/>
+  <object id="381" type="loot" gid="539" x="2304" y="2529" width="25" height="31" rotation="-67.316"/>
+  <object id="382" type="loot" gid="539" x="2282.3" y="2513.16" width="25" height="31" rotation="-135.596"/>
+  <object id="383" type="loot" gid="539" x="3266" y="2992" width="25" height="31" rotation="-121.165"/>
+  <object id="384" type="loot" gid="539" x="3250" y="3061" width="25" height="31" rotation="-67.316"/>
+  <object id="386" type="loot" gid="540" x="5110" y="2574" width="48" height="40" rotation="-245.384"/>
+  <object id="387" type="loot" gid="540" x="3208" y="2550" width="48" height="40" rotation="-245.384"/>
+  <object id="388" type="loot" gid="540" x="5508" y="2822" width="48" height="40" rotation="-245.384"/>
+  <object id="389" type="loot" gid="539" x="5128" y="2853" width="25" height="31"/>
+  <object id="390" type="loot" gid="539" x="5230" y="2661" width="25" height="31"/>
+  <object id="391" type="loot" gid="539" x="5201" y="2627" width="25" height="31" rotation="45.5286"/>
+  <object id="392" type="loot" gid="539" x="5669" y="2782" width="25" height="31" rotation="-63.2205"/>
+  <object id="393" type="loot" gid="541" x="5479.33" y="2602.78" width="19" height="12" rotation="-41.317"/>
+  <object id="394" type="loot" gid="541" x="5239" y="2618" width="19" height="12"/>
+  <object id="395" type="loot" gid="541" x="5143" y="1399" width="19" height="12" rotation="-38.4017"/>
+  <object id="396" type="loot" gid="539" x="5350" y="949" width="25" height="31" rotation="-36.016"/>
+  <object id="397" type="loot" gid="539" x="5300.85" y="920.271" width="25" height="31" rotation="-299.552"/>
+  <object id="398" type="loot" gid="539" x="5133" y="916" width="25" height="31" rotation="-298.179"/>
+  <object id="399" type="loot" gid="540" x="5132" y="1080" width="48" height="40"/>
+  <object id="400" type="loot" gid="539" x="5141" y="1381" width="25" height="31" rotation="-40.539"/>
+  <object id="401" type="loot" gid="539" x="5682" y="694" width="25" height="31" rotation="-36.016"/>
+  <object id="402" type="loot" gid="539" x="5702" y="718" width="25" height="31" rotation="-299.552"/>
+  <object id="403" type="loot" gid="539" x="5574" y="1016" width="25" height="31" rotation="-298.179"/>
+  <object id="404" type="loot" gid="539" x="4972" y="2847" width="25" height="31" rotation="-36.016"/>
+  <object id="405" type="loot" gid="539" x="4927" y="2816" width="25" height="31" rotation="-299.552"/>
+  <object id="406" type="loot" gid="539" x="5019" y="2464" width="25" height="31" rotation="-298.179"/>
+  <object id="407" type="loot" gid="542" x="5210" y="943" width="21" height="22"/>
+  <object id="408" type="loot" gid="539" x="4898" y="3951" width="25" height="31"/>
+  <object id="409" type="loot" gid="539" x="5078" y="3889" width="25" height="31"/>
+  <object id="411" type="loot" gid="539" x="5424" y="3511" width="25" height="31"/>
+  <object id="412" type="loot" gid="539" x="5648" y="3719" width="25" height="31"/>
+  <object id="413" type="loot" gid="539" x="4886" y="3509" width="25" height="31"/>
+  <object id="415" type="loot" gid="539" x="4712" y="1931" width="25" height="31" rotation="-287.396"/>
+  <object id="416" type="loot" gid="539" x="4680" y="1771" width="25" height="31" rotation="-65.7867"/>
+  <object id="419" type="loot" gid="539" x="5709" y="1968" width="25" height="31"/>
+  <object id="420" type="loot" gid="539" x="5716" y="1762" width="25" height="31"/>
+  <object id="421" type="loot" gid="539" x="5714" y="1660" width="25" height="31"/>
+  <object id="422" type="loot" gid="539" x="5719" y="1583" width="25" height="31"/>
+  <object id="424" type="loot" gid="539" x="4098" y="3420" width="25" height="31"/>
+  <object id="425" type="loot" gid="539" x="4101" y="3433" width="25" height="31" rotation="-297.592"/>
+  <object id="426" type="loot" gid="540" x="4240" y="3448" width="48" height="40"/>
+  <object id="427" type="loot" gid="541" x="5393" y="3676" width="19" height="12" rotation="-51.7121"/>
+  <object id="428" type="loot" gid="541" x="5385" y="3814" width="19" height="12" rotation="-288.968"/>
+  <object id="429" type="loot" gid="539" x="5419" y="3680" width="25" height="31"/>
+  <object id="430" type="loot" gid="539" x="5461" y="3693" width="25" height="31" rotation="307.171"/>
+  <object id="431" type="loot" gid="540" x="2505" y="3448" width="48" height="40"/>
+  <object id="432" type="loot" gid="540" x="2357" y="2234" width="48" height="40"/>
+  <object id="434" type="loot" gid="540" x="1148" y="1971" width="48" height="40"/>
+  <object id="435" type="loot" gid="540" x="5323" y="4503" width="48" height="40"/>
+  <object id="436" type="loot" gid="540" x="5452" y="3845" width="48" height="40"/>
+  <object id="437" type="loot" gid="541" x="4310.87" y="2693.35" width="19" height="12" rotation="-80.627"/>
+  <object id="438" type="loot" gid="541" x="4297" y="1948" width="19" height="12" rotation="-61.8863"/>
+  <object id="439" type="loot" gid="539" x="4336" y="2003" width="25" height="31" rotation="-85.4686"/>
+  <object id="440" type="loot" gid="539" x="4103" y="3076" width="25" height="31"/>
+  <object id="441" type="loot" gid="539" x="4122.89" y="3080.65" width="25" height="31" rotation="-223.522"/>
+  <object id="443" type="loot" gid="542" x="4123" y="2808" width="21" height="22"/>
+  <object id="444" type="loot" gid="542" x="4138" y="1979" width="21" height="22"/>
+  <object id="448" type="loot" gid="541" x="1682" y="623" width="19" height="10" rotation="-419.523"/>
+  <object id="449" type="loot" gid="539" x="1718" y="634" width="25" height="31" rotation="-414.884"/>
+  <object id="450" type="loot" gid="541" x="5626" y="4902" width="19" height="12" rotation="-51.7121"/>
+  <object id="451" type="loot" gid="541" x="892" y="4870" width="19" height="12" rotation="-51.7121"/>
+  <object id="452" type="loot" gid="541" x="1354" y="5219" width="19" height="12" rotation="-51.7121"/>
+  <object id="455" type="loot" gid="539" x="3322" y="3634" width="25" height="31" rotation="-67.316"/>
+  <object id="456" type="loot" gid="541" x="5713" y="695" width="19" height="12" rotation="-38.4017"/>
+  <object id="457" type="loot" gid="1073742363" x="4946" y="5271" width="31.953" height="39.0409" rotation="360.336"/>
+  <object id="458" type="loot" gid="1073742365" x="4936" y="5294" width="19" height="10" rotation="689.415"/>
+  <object id="465" type="loot" gid="539" x="3304" y="1477" width="25" height="31" rotation="-234.687"/>
+  <object id="466" type="loot" gid="541" x="3336" y="1475" width="19" height="10" rotation="-229.71"/>
+  <object id="467" type="loot" gid="541" x="4715" y="1138" width="19" height="12" rotation="-38.4017"/>
+  <object id="468" type="loot" gid="539" x="4798" y="1399" width="25" height="31" rotation="44.8277"/>
+  <object id="469" type="loot" gid="541" x="746" y="1041" width="19" height="10" rotation="-419.523"/>
+  <object id="470" type="loot" gid="539" x="796" y="1034" width="25" height="31" rotation="-414.884"/>
+  <object id="471" type="loot" gid="539" x="1663" y="1698" width="25" height="31"/>
+  <object id="472" type="loot" gid="541" x="1666" y="1702" width="19" height="10" rotation="51.5804"/>
  </objectgroup>
  <objectgroup name="Markup" visible="0">
   <object id="315" type="spawn" x="812" y="782" width="4688" height="4348"/>
