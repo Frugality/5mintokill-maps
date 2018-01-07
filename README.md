@@ -20,7 +20,24 @@ Describes loot spawn locations. Each object references a loot table, which rando
 Used for defining spawn regions. Create any number of spawn rectangles.
 
 ## Testing 
-There isn't currently a way to test a map locally. This is an area for future improvement.
+To test your map locally, you first need to prepare and export the map
+
+### Exporting
+1. Embed Tilesets
+   * Open the Tilesets panel
+   * Press the "Embed Tileset" button for each of the tilesets in your map
+1. Export map
+   * Export to a .json format
+
+### Viewing
+1. Go to https://5mintokill.io/?viewer=1
+   * A new "Viewer" item should appear in the menu bar
+1. Drop your .json file onto the area
+   * If all goes well, you should be able to run around your map
+
+### Caveats
+1. No loot
+2. No doors
 
 ## Publishing
 Publish is another area for future improvement -- currently maps are versioned, published, and configured manually.
