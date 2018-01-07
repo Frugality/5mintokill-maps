@@ -3106,6 +3106,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_493.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="28" height="64"/>
+  </objectgroup>
  </tile>
  <tile id="493">
   <properties>
@@ -3113,6 +3116,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_494.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="36" y="0" width="28" height="64"/>
+  </objectgroup>
  </tile>
  <tile id="494">
   <properties>
@@ -3120,6 +3126,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_495.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="18" y="0" width="28" height="64"/>
+  </objectgroup>
  </tile>
  <tile id="495">
   <properties>
@@ -3127,6 +3136,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_496.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="18" y="0" width="28" height="64"/>
+  </objectgroup>
  </tile>
  <tile id="496">
   <properties>
@@ -3134,6 +3146,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_497.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="18" height="64"/>
+  </objectgroup>
  </tile>
  <tile id="497">
   <properties>
@@ -3141,6 +3156,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_498.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="46" y="0" width="18" height="64"/>
+  </objectgroup>
  </tile>
  <tile id="498">
   <properties>
@@ -3148,6 +3166,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_499.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="23" y="0" width="18" height="64"/>
+  </objectgroup>
  </tile>
  <tile id="499">
   <properties>
@@ -3155,6 +3176,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_500.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="23" y="0" width="18" height="64"/>
+  </objectgroup>
  </tile>
  <tile id="500">
   <properties>
@@ -3317,6 +3341,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_520.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="collision" x="0" y="0" width="64" height="28"/>
+  </objectgroup>
  </tile>
  <tile id="520">
   <properties>
@@ -3324,6 +3351,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_521.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="collision" x="0" y="36" width="64" height="28"/>
+  </objectgroup>
  </tile>
  <tile id="521">
   <properties>
@@ -3331,6 +3361,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_522.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="collision" x="0" y="18" width="64" height="28"/>
+  </objectgroup>
  </tile>
  <tile id="522">
   <properties>
@@ -3338,6 +3371,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_523.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="collision" x="0" y="18" width="64" height="28"/>
+  </objectgroup>
  </tile>
  <tile id="523">
   <properties>
@@ -3345,6 +3381,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_524.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="collision" x="0" y="0" width="64" height="18"/>
+  </objectgroup>
  </tile>
  <tile id="524">
   <properties>
@@ -3352,6 +3391,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_525.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="collision" x="0" y="46" width="64" height="18"/>
+  </objectgroup>
  </tile>
  <tile id="525">
   <properties>
@@ -3359,6 +3401,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_526.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="collision" x="0" y="23" width="64" height="18"/>
+  </objectgroup>
  </tile>
  <tile id="526">
   <properties>
@@ -3366,6 +3411,9 @@
    <property name="material" value="metal"/>
   </properties>
   <image width="64" height="64" source="../sprites/topdown-shooter/PNG/Tiles/tile_527.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="collision" x="0" y="23" width="64" height="18"/>
+  </objectgroup>
  </tile>
  <tile id="527">
   <properties>
