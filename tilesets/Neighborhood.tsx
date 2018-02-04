@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset name="Tiles" tilewidth="64" tileheight="64" tilecount="538" columns="27">
+<tileset name="Neighborhood" tilewidth="64" tileheight="64" tilecount="538" columns="27">
  <properties>
   <property name="collision" type="bool" value="true"/>
  </properties>
